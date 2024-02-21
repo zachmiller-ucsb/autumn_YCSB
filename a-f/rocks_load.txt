@@ -1,0 +1,26 @@
+Autumn C set to 0.8
+Multiplier set to 10.0
+[OVERALL], RunTime(ms), 7243781
+[OVERALL], Throughput(ops/sec), 11043.956188073604
+[TOTAL_GCS_G1_Young_Generation], Count, 3957
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 2396
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.03307664878328045
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 3957
+[TOTAL_GC_TIME], Time(ms), 2396
+[TOTAL_GC_TIME_%], Time(%), 0.03307664878328045
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1257984.0
+[CLEANUP], MinLatency(us), 1257472
+[CLEANUP], MaxLatency(us), 1258495
+[CLEANUP], 95thPercentileLatency(us), 1258495
+[CLEANUP], 99thPercentileLatency(us), 1258495
+[INSERT], Operations, 80000000
+[INSERT], AverageLatency(us), 88.828182725
+[INSERT], MinLatency(us), 6
+[INSERT], MaxLatency(us), 10485759
+[INSERT], 95thPercentileLatency(us), 1070
+[INSERT], 99thPercentileLatency(us), 2141
+[INSERT], Return=OK, 80000000
