@@ -46,7 +46,7 @@ def parse():
 
         return data
     
-def plot(filename, title, max_y, operations):
+def plot(filename, title, max_y, operations, merge=False):
     data = parse()
 
     fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, sharey=True)
@@ -55,14 +55,25 @@ def plot(filename, title, max_y, operations):
     ax2.set_title("99th Percentile")
     plt.ylim(0,max_y)
 
-    legend_items = []
-    for op, color in operations.items():
-        scans_90, = ax1.plot(*zip(*data[op][0]), label=op, color=color)
-        # ax1.axhline(y=np.median([l for t, l in data[op][0]]), color='black', linestyle='--')
-        ax2.plot(*zip(*data[op][1]), label=op, color=color)
-        # ax2.axhline(y=np.median([l for t, l in data[op][1]]), color='black', linestyle='--')
-        legend_items.append(scans_90)
-    fig.legend(handles=legend_items)
+    if merge:
+        data_90_unsorted = []
+        data_99_unsorted = []
+        for op in operations.keys():
+            data_90_unsorted += data[op][0]
+            data_99_unsorted += data[op][1]
+        data_90 = sorted(data_90_unsorted, key=lambda pair:pair[0])
+        data_99 = sorted(data_99_unsorted, key=lambda pair:pair[0])
+        ax1.plot(*zip(*data_90), color='blue')
+        ax2.plot(*zip(*data_99), color='blue')
+    else:
+        legend_items = []
+        for op, color in operations.items():
+            scans_90, = ax1.plot(*zip(*data[op][0]), label=op, color=color)
+            # ax1.axhline(y=np.median([l for t, l in data[op][0]]), color='black', linestyle='--')
+            ax2.plot(*zip(*data[op][1]), label=op, color=color)
+            # ax2.axhline(y=np.median([l for t, l in data[op][1]]), color='black', linestyle='--')
+            legend_items.append(scans_90)
+        fig.legend(handles=legend_items)
 
     plt.subplots_adjust(hspace=0.5)
 
@@ -75,6 +86,11 @@ def plot(filename, title, max_y, operations):
     plt.savefig(filename, dpi=600)
 
 if __name__ == '__main__':
-    c = 0.4
-    # plot(f"scans/c{c}.png",f"Autumn on YCSB (c = {c})",(400,999), {'SCAN' : 'orange', 'INSERT' : 'blue'})
-    plot("scans/rocks.png","RocksDB on YCSB",(400,999), {'SCAN' : 'orange', 'INSERT' : 'blue'})
+    c = 0.8
+    ## Merged
+    # plot(f"T3_small_bench/c{c}.png",f"Autumn on YCSB (c = {c})", 300, {'SCAN' : 'orange', 'INSERT' : 'blue'}, True)
+    plot("T3_small_bench/rocks.png","RocksDB on YCSB", 300, {'SCAN' : 'orange', 'INSERT' : 'blue'}, True)
+
+    ## Unmerged
+    # plot(f"T3_small_bench/c{c}.png",f"Autumn on YCSB (c = {c})", 300, {'SCAN' : 'orange', 'INSERT' : 'blue'})
+    # plot("T3_small_bench/rocks.png","RocksDB on YCSB", 300, {'SCAN' : 'orange', 'INSERT' : 'blue'})
