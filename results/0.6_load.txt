@@ -1,0 +1,38 @@
+Autumn C set to 0.6
+Multiplier set to 5.0
+ERROR: java.lang.ArrayIndexOutOfBoundsException - ignoring and continuing
+java.lang.ArrayIndexOutOfBoundsException: Histogram recorded value cannot be negative.
+	at org.HdrHistogram.AbstractHistogram.countsArrayIndex(AbstractHistogram.java:1944)
+	at org.HdrHistogram.AbstractHistogram.recordSingleValue(AbstractHistogram.java:414)
+	at org.HdrHistogram.AbstractHistogram.recordValue(AbstractHistogram.java:333)
+	at org.HdrHistogram.Recorder.recordValue(Recorder.java:100)
+	at site.ycsb.measurements.OneMeasurementHdrHistogram.measure(OneMeasurementHdrHistogram.java:101)
+	at site.ycsb.measurements.Measurements.measure(Measurements.java:189)
+	at site.ycsb.DBWrapper.measure(DBWrapper.java:184)
+	at site.ycsb.DBWrapper.cleanup(DBWrapper.java:122)
+	at site.ycsb.ClientThread.run(ClientThread.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[OVERALL], RunTime(ms), 20038034
+[OVERALL], Throughput(ops/sec), 3992.407638394066
+[TOTAL_GCS_G1_Young_Generation], Count, 3975
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 2856
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.014252895269066816
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 3975
+[TOTAL_GC_TIME], Time(ms), 2856
+[TOTAL_GC_TIME_%], Time(%), 0.014252895269066816
+[CLEANUP], Operations, 0
+[CLEANUP], AverageLatency(us), NaN
+[CLEANUP], MinLatency(us), 9223372036854775807
+[CLEANUP], MaxLatency(us), 0
+[CLEANUP], 95thPercentileLatency(us), 0
+[CLEANUP], 99thPercentileLatency(us), 0
+[INSERT], Operations, 80000000
+[INSERT], AverageLatency(us), 98.571216125
+[INSERT], MinLatency(us), 7
+[INSERT], MaxLatency(us), 2332671
+[INSERT], 95thPercentileLatency(us), 237
+[INSERT], 99thPercentileLatency(us), 2159
+[INSERT], Return=OK, 80000000

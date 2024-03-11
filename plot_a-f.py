@@ -3,10 +3,10 @@ import numpy as np
 
 benchmarks = ("Load", "A", "B", "C", "D", "E", "F")
 ops_per_sec = {
-    'RocksDB': (10.48, 3.24, 4.28, 5.00, 10.69, 1.35, 5.57),
-    'Autumn c=0.8': (8.93, 3.43, 3.69, 3.77, 6.23, .83, 3.15),
-    'Autumn c=0.6': (8.97, 3.20, 4.00, 5.27, 11.22, 1.21, 4.47),
-    'Autumn c=0.4': (9.27, 2.82, 3.36, 3.66, 12.02, 1.24, 4.63),
+    'RocksDB': (11.22, 4.81, 6.30, 6.68, 13.63, 1.17, 5.14),
+    'Autumn c=0.8': (9.16, 4.45, 5.58, 6.40, 13.06, 1.19, 5.16),
+    'Autumn c=0.6': (9.95, 5.03, 7.40, 6.86, 13.13, 1.19, 5.30),
+    'Autumn c=0.4': (8.69, 5.25, 6.76, 7.53, 14.80, 1.28, 5.77),
 }
 colors = ['black', 'orange', 'blue', 'red']
 
@@ -26,7 +26,7 @@ for db, measurement in ops_per_sec.items():
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Normalized Throughput')
-ax.set_title('Value Size: 1 Kb, DB Size: 80 Gb, T=10')
+ax.set_title('Value Size: 1 Kb, DB Size: 80 Gb, T=5, Sleep 50 min')
 ax.set_xticks(x + 1.5 * width, benchmarks)
 ax.legend(loc='upper center', ncols=3)
 ax.set_ylim(bottom=0, top=1.5)
