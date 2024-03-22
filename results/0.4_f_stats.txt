@@ -9,125 +9,32 @@ Starting test.
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-2024-03-09 18:09:18:295 0 sec: 0 operations; est completion in 0 second 
+2024-03-20 23:43:28:989 0 sec: 0 operations; est completion in 0 second 
 DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
-2024-03-09 18:09:28:245 10 sec: 23585 operations; 2358.26 current ops/sec; est completion in 6 minutes [READ: Count=23597, Max=11599, Min=3, Avg=236.82, 90=516, 99=1183, 99.9=2717, 99.99=7959] [READ-MODIFY-WRITE: Count=11796, Max=18863, Min=20, Avg=311.13, 90=607, 99=1433, 99.9=3445, 99.99=10023] [UPDATE: Count=11818, Max=17279, Min=15, Avg=69.49, 90=113, 99=172, 99.9=1230, 99.99=9175] 
-2024-03-09 18:09:38:244 20 sec: 68826 operations; 4524.1 current ops/sec; est completion in 4 minutes [READ: Count=45229, Max=10703, Min=3, Avg=190.47, 90=415, 99=676, 99.9=2145, 99.99=3923] [READ-MODIFY-WRITE: Count=22546, Max=12247, Min=19, Avg=245.92, 90=485, 99=784, 99.9=2403, 99.99=10047] [UPDATE: Count=22524, Max=9911, Min=14, Avg=52.62, 90=74, 99=146, 99.9=264, 99.99=2044] 
-2024-03-09 18:09:48:244 30 sec: 117039 operations; 4821.3 current ops/sec; est completion in 3 minutes [READ: Count=48214, Max=15719, Min=3, Avg=179.57, 90=404, 99=609, 99.9=1931, 99.99=3545] [READ-MODIFY-WRITE: Count=24018, Max=16543, Min=20, Avg=231.64, 90=470, 99=716, 99.9=1897, 99.99=4043] [UPDATE: Count=24020, Max=2101, Min=14, Avg=50.26, 90=72, 99=147, 99.9=249, 99.99=1404] 
-2024-03-09 18:09:58:244 40 sec: 179021 operations; 6198.2 current ops/sec; est completion in 3 minutes [READ: Count=61984, Max=3809, Min=3, Avg=143.66, 90=354, 99=488, 99.9=881, 99.99=1848] [READ-MODIFY-WRITE: Count=30878, Max=9695, Min=18, Avg=176.94, 90=392, 99=531, 99.9=1211, 99.99=2857] [UPDATE: Count=30879, Max=8895, Min=13, Avg=31.51, 90=40, 99=72, 99.9=113, 99.99=952] 
-2024-03-09 18:10:08:244 50 sec: 242751 operations; 6373 current ops/sec; est completion in 2 minutes [READ: Count=63730, Max=9751, Min=2, Avg=139.97, 90=351, 99=477, 99.9=542, 99.99=946] [READ-MODIFY-WRITE: Count=31884, Max=11279, Min=15, Avg=171.07, 90=388, 99=520, 99.9=589, 99.99=1122] [UPDATE: Count=31881, Max=472, Min=12, Avg=30.02, 90=39, 99=67, 99.9=95, 99.99=181] 
-2024-03-09 18:10:18:244 60 sec: 306716 operations; 6396.5 current ops/sec; est completion in 2 minutes [READ: Count=63963, Max=9775, Min=2, Avg=139.24, 90=347, 99=471, 99.9=532, 99.99=785] [READ-MODIFY-WRITE: Count=32124, Max=8159, Min=18, Avg=169.86, 90=385, 99=515, 99.9=596, 99.99=1211] [UPDATE: Count=32124, Max=1973, Min=13, Avg=30.26, 90=40, 99=70, 99.9=98, 99.99=571] 
-2024-03-09 18:10:28:244 70 sec: 369661 operations; 6294.5 current ops/sec; est completion in 2 minutes [READ: Count=62944, Max=9703, Min=3, Avg=141.43, 90=355, 99=485, 99.9=565, 99.99=1887] [READ-MODIFY-WRITE: Count=31462, Max=10135, Min=18, Avg=173.91, 90=394, 99=530, 99.9=687, 99.99=1895] [UPDATE: Count=31462, Max=913, Min=13, Avg=31.08, 90=41, 99=69, 99.9=98, 99.99=514] 
-2024-03-09 18:10:38:244 80 sec: 433686 operations; 6402.5 current ops/sec; est completion in 1 minute [READ: Count=64025, Max=9583, Min=3, Avg=138.64, 90=353, 99=478, 99.9=537, 99.99=663] [READ-MODIFY-WRITE: Count=32149, Max=9999, Min=18, Avg=171, 90=393, 99=526, 99.9=594, 99.99=1035] [UPDATE: Count=32149, Max=832, Min=14, Avg=31.16, 90=41, 99=73, 99.9=99, 99.99=392] 
-2024-03-09 18:10:48:244 90 sec: 493876 operations; 6019 current ops/sec; est completion in 1 minute [READ: Count=60190, Max=13327, Min=3, Avg=147.8, 90=362, 99=504, 99.9=1388, 99.99=10735] [READ-MODIFY-WRITE: Count=30006, Max=13455, Min=18, Avg=182.89, 90=401, 99=554, 99.9=1748, 99.99=11399] [UPDATE: Count=30007, Max=7307, Min=13, Avg=32.72, 90=45, 99=81, 99.9=123, 99.99=800] 
-2024-03-09 18:10:58:244 100 sec: 559358 operations; 6548.2 current ops/sec; est completion in 1 minute [READ: Count=65485, Max=2401, Min=3, Avg=136.83, 90=350, 99=472, 99.9=530, 99.99=561] [READ-MODIFY-WRITE: Count=32777, Max=1030, Min=18, Avg=165.86, 90=387, 99=512, 99.9=570, 99.99=624] [UPDATE: Count=32776, Max=826, Min=13, Avg=28.1, 90=37, 99=47, 99.9=63, 99.99=85] 
-2024-03-09 18:11:08:244 110 sec: 624806 operations; 6544.8 current ops/sec; est completion in 1 minute [READ: Count=65446, Max=4089, Min=3, Avg=136.61, 90=352, 99=473, 99.9=529, 99.99=562] [READ-MODIFY-WRITE: Count=32864, Max=1134, Min=17, Avg=165.87, 90=389, 99=508, 99.9=569, 99.99=610] [UPDATE: Count=32864, Max=789, Min=13, Avg=28.53, 90=38, 99=50, 99.9=73, 99.99=103] 
-2024-03-09 18:11:18:244 120 sec: 689602 operations; 6479.6 current ops/sec; est completion in 55 seconds [READ: Count=64796, Max=3089, Min=2, Avg=137.98, 90=355, 99=482, 99.9=769, 99.99=2125] [READ-MODIFY-WRITE: Count=32210, Max=6535, Min=16, Avg=168.03, 90=394, 99=524, 99.9=913, 99.99=2385] [UPDATE: Count=32212, Max=6247, Min=11, Avg=29.14, 90=39, 99=52, 99.9=83, 99.99=730] 
-2024-03-09 18:11:28:244 130 sec: 753844 operations; 6424.2 current ops/sec; est completion in 43 seconds [READ: Count=64242, Max=1347, Min=3, Avg=138.9, 90=357, 99=487, 99.9=594, 99.99=687] [READ-MODIFY-WRITE: Count=32129, Max=1459, Min=17, Avg=169.58, 90=397, 99=531, 99.9=650, 99.99=1126] [UPDATE: Count=32127, Max=792, Min=13, Avg=29.78, 90=40, 99=59, 99.9=88, 99.99=156] 
-2024-03-09 18:11:38:244 140 sec: 815962 operations; 6211.8 current ops/sec; est completion in 32 seconds [READ: Count=62117, Max=778, Min=3, Avg=144, 90=374, 99=519, 99.9=664, 99.99=743] [READ-MODIFY-WRITE: Count=31070, Max=1094, Min=18, Avg=176.31, 90=415, 99=568, 99.9=700, 99.99=797] [UPDATE: Count=31070, Max=739, Min=12, Avg=30.21, 90=40, 99=66, 99.9=92, 99.99=107] 
-2024-03-09 18:11:48:244 150 sec: 880936 operations; 6497.4 current ops/sec; est completion in 21 seconds [READ: Count=64974, Max=3141, Min=3, Avg=136.43, 90=358, 99=485, 99.9=640, 99.99=2223] [READ-MODIFY-WRITE: Count=32453, Max=8147, Min=18, Avg=168.84, 90=399, 99=530, 99.9=804, 99.99=2657] [UPDATE: Count=32456, Max=6391, Min=14, Avg=31.23, 90=42, 99=68, 99.9=95, 99.99=125] 
-2024-03-09 18:11:58:244 160 sec: 928458 operations; 4752.2 current ops/sec; est completion in 13 seconds [READ: Count=47522, Max=23711, Min=3, Avg=184.74, 90=403, 99=798, 99.9=8471, 99.99=14823] [READ-MODIFY-WRITE: Count=23967, Max=23823, Min=19, Avg=234.42, 90=481, 99=942, 99.9=9743, 99.99=16527] [UPDATE: Count=23964, Max=6063, Min=14, Avg=45.8, 90=77, 99=96, 99.9=137, 99.99=4215] 
-2024-03-09 18:12:08:244 170 sec: 981107 operations; 5264.9 current ops/sec; est completion in 4 second [READ: Count=52651, Max=46911, Min=2, Avg=165.17, 90=382, 99=554, 99.9=4451, 99.99=16591] [READ-MODIFY-WRITE: Count=26155, Max=47007, Min=18, Avg=212.85, 90=442, 99=629, 99.9=4543, 99.99=25903] [UPDATE: Count=26155, Max=7279, Min=14, Avg=44.66, 90=67, 99=93, 99.9=185, 99.99=942] 
-2024-03-09 18:12:18:244 180 sec: 1000000 operations; 1889.3 current ops/sec; [READ: Count=18891, Max=3219, Min=3, Avg=142.24, 90=371, 99=496, 99.9=1055, 99.99=2483] [READ-MODIFY-WRITE: Count=9409, Max=2581, Min=19, Avg=182.14, 90=426, 99=553, 99.9=1126, 99.99=1694] [UPDATE: Count=9409, Max=846, Min=13, Avg=40.26, 90=58, 99=72, 99.9=95, 99.99=144] 
-2024-03-09 18:12:28:244 190 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:12:38:244 200 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:12:48:244 210 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:12:58:244 220 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:13:08:244 230 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:13:18:244 240 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:13:28:244 250 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:13:38:244 260 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:13:48:244 270 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:13:58:244 280 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:14:08:244 290 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:14:18:244 300 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:14:28:244 310 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:14:38:244 320 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:14:48:244 330 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:14:58:244 340 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:15:08:244 350 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:15:18:244 360 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:15:28:244 370 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:15:38:244 380 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:15:48:244 390 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:15:58:244 400 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:16:08:244 410 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:16:18:244 420 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:16:28:244 430 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:16:38:244 440 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:16:48:244 450 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:16:58:244 460 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:17:08:244 470 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:17:18:244 480 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:17:28:244 490 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:17:38:244 500 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:17:48:244 510 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:17:58:244 520 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:18:08:244 530 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:18:18:244 540 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:18:28:244 550 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:18:38:244 560 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:18:48:244 570 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:18:58:244 580 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:19:08:244 590 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:19:18:244 600 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:19:28:244 610 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:19:38:244 620 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:19:48:244 630 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:19:58:244 640 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:20:08:244 650 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:20:18:244 660 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:20:28:244 670 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:20:38:244 680 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:20:48:244 690 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:20:58:244 700 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:21:08:244 710 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:21:18:244 720 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:21:28:244 730 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:21:38:244 740 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:21:48:244 750 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:21:58:244 760 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-2024-03-09 18:22:08:244 770 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
-
-** Compaction Stats [default] **
-Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Sum      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
- Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
-
-** Compaction Stats [default] **
-Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
-
-Uptime(secs): 770.9 total, 169.7 interval
-Flush(GB): cumulative 0.000, interval 0.000
-AddFile(GB): cumulative 0.000, interval 0.000
-AddFile(Total Files): cumulative 0, interval 0
-AddFile(L0 Files): cumulative 0, interval 0
-AddFile(Keys): cumulative 0, interval 0
-Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
-Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
-Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0
-Block cache LRUCache@0x7ffb402caa20#40901 capacity: 32.00 MB seed: 954932438 usage: 0.10 KB table_size: 1024 occupancy: 1 collections: 2 last_copies: 0 last_secs: 7.3e-05 secs_since: 169
-Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
-
-** File Read Latency Histogram By Level [default] **
-
-** DB Stats **
-Uptime(secs): 770.9 total, 169.7 interval
-Cumulative writes: 499K writes, 499K keys, 499K commit groups, 1.0 writes per commit group, ingest: 0.55 GB, 0.73 MB/s
-Cumulative WAL: 499K writes, 0 syncs, 499897.00 writes per sync, written: 0.55 GB, 0.73 MB/s
-Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
-Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
-Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
-Interval stall: 00:00:0.000 H:M:S, 0.0 percent
-Write Stall (count): write-buffer-manager-limit-stops: 0
-
-rocksdb.block.cache.miss COUNT : 3082310
-rocksdb.block.cache.hit COUNT : 1097824
-rocksdb.block.cache.add COUNT : 1970089
+2024-03-20 23:43:38:934 10 sec: 24483 operations; 2448.06 current ops/sec; est completion in 6 minutes [READ: Count=24492, Max=13919, Min=2, Avg=241.89, 90=513, 99=816, 99.9=2335, 99.99=6051] [READ-MODIFY-WRITE: Count=12254, Max=14439, Min=17, Avg=301.92, 90=582, 99=958, 99.9=2557, 99.99=11375] [UPDATE: Count=12267, Max=9799, Min=12, Avg=55.06, 90=83, 99=157, 99.9=819, 99.99=2531] 
+2024-03-20 23:43:48:933 20 sec: 68862 operations; 4437.9 current ops/sec; est completion in 4 minutes [READ: Count=44372, Max=4991, Min=2, Avg=200.5, 90=414, 99=649, 99.9=1930, 99.99=3689] [READ-MODIFY-WRITE: Count=22217, Max=5091, Min=16, Avg=244.82, 90=479, 99=713, 99.9=2107, 99.99=3273] [UPDATE: Count=22204, Max=1054, Min=12, Avg=42.8, 90=61, 99=80, 99.9=110, 99.99=261] 
+2024-03-20 23:43:58:933 30 sec: 115143 operations; 4628.1 current ops/sec; est completion in 3 minutes [READ: Count=46279, Max=8031, Min=2, Avg=193.02, 90=394, 99=624, 99.9=1990, 99.99=3205] [READ-MODIFY-WRITE: Count=23120, Max=9511, Min=16, Avg=238.09, 90=452, 99=686, 99.9=2081, 99.99=3599] [UPDATE: Count=23120, Max=1142, Min=12, Avg=41.27, 90=59, 99=76, 99.9=109, 99.99=912] 
+2024-03-20 23:44:08:933 40 sec: 171295 operations; 5615.2 current ops/sec; est completion in 3 minutes [READ: Count=56153, Max=3407, Min=2, Avg=160.36, 90=356, 99=518, 99.9=1585, 99.99=2601] [READ-MODIFY-WRITE: Count=28040, Max=8663, Min=16, Avg=193.08, 90=400, 99=577, 99.9=1666, 99.99=2745] [UPDATE: Count=28041, Max=6347, Min=12, Avg=31.55, 90=49, 99=71, 99.9=94, 99.99=215] 
+2024-03-20 23:44:18:933 50 sec: 233244 operations; 6194.9 current ops/sec; est completion in 2 minutes [READ: Count=61949, Max=1594, Min=2, Avg=146.17, 90=338, 99=463, 99.9=508, 99.99=598] [READ-MODIFY-WRITE: Count=30833, Max=1677, Min=14, Avg=173.58, 90=372, 99=496, 99.9=546, 99.99=888] [UPDATE: Count=30832, Max=1044, Min=11, Avg=27.1, 90=36, 99=51, 99.9=68, 99.99=117] 
+2024-03-20 23:44:28:933 60 sec: 295679 operations; 6243.5 current ops/sec; est completion in 2 minutes [READ: Count=62435, Max=3919, Min=2, Avg=144.77, 90=340, 99=465, 99.9=514, 99.99=540] [READ-MODIFY-WRITE: Count=31155, Max=4767, Min=15, Avg=172.27, 90=375, 99=500, 99.9=553, 99.99=890] [UPDATE: Count=31155, Max=893, Min=11, Avg=27.29, 90=37, 99=52, 99.9=68, 99.99=102] 
+2024-03-20 23:44:38:933 70 sec: 358506 operations; 6282.7 current ops/sec; est completion in 2 minutes [READ: Count=62827, Max=3117, Min=2, Avg=143.5, 90=339, 99=462, 99.9=520, 99.99=1538] [READ-MODIFY-WRITE: Count=31529, Max=2241, Min=16, Avg=170.8, 90=375, 99=499, 99.9=558, 99.99=1518] [UPDATE: Count=31529, Max=917, Min=11, Avg=27.56, 90=37, 99=52, 99.9=68, 99.99=103] 
+2024-03-20 23:44:48:933 80 sec: 422167 operations; 6366.1 current ops/sec; est completion in 1 minute [READ: Count=63661, Max=876, Min=2, Avg=141.4, 90=339, 99=458, 99.9=511, 99.99=533] [READ-MODIFY-WRITE: Count=31794, Max=1139, Min=16, Avg=169.89, 90=375, 99=496, 99.9=548, 99.99=737] [UPDATE: Count=31794, Max=915, Min=12, Avg=27.95, 90=37, 99=52, 99.9=67, 99.99=704] 
+2024-03-20 23:44:58:933 90 sec: 484030 operations; 6186.3 current ops/sec; est completion in 1 minute [READ: Count=61864, Max=9927, Min=2, Avg=145.77, 90=343, 99=474, 99.9=1469, 99.99=3213] [READ-MODIFY-WRITE: Count=30924, Max=10775, Min=15, Avg=175.56, 90=378, 99=512, 99.9=1595, 99.99=3907] [UPDATE: Count=30924, Max=1818, Min=11, Avg=28.08, 90=38, 99=66, 99.9=91, 99.99=510] 
+2024-03-20 23:45:08:933 100 sec: 548939 operations; 6490.9 current ops/sec; est completion in 1 minute [READ: Count=64907, Max=564, Min=2, Avg=139.16, 90=341, 99=461, 99.9=513, 99.99=542] [READ-MODIFY-WRITE: Count=32416, Max=4551, Min=15, Avg=167.01, 90=375, 99=499, 99.9=552, 99.99=775] [UPDATE: Count=32416, Max=3395, Min=11, Avg=26.27, 90=35, 99=50, 99.9=68, 99.99=768] 
+2024-03-20 23:45:18:933 110 sec: 615059 operations; 6612 current ops/sec; est completion in 1 minute [READ: Count=66121, Max=4299, Min=2, Avg=136.27, 90=340, 99=459, 99.9=511, 99.99=543] [READ-MODIFY-WRITE: Count=33039, Max=4947, Min=16, Avg=164.4, 90=374, 99=493, 99.9=550, 99.99=819] [UPDATE: Count=33039, Max=805, Min=12, Avg=26.45, 90=35, 99=51, 99.9=71, 99.99=107] 
+2024-03-20 23:45:28:933 120 sec: 681107 operations; 6604.8 current ops/sec; est completion in 57 seconds [READ: Count=66047, Max=3607, Min=2, Avg=136.39, 90=339, 99=461, 99.9=683, 99.99=2077] [READ-MODIFY-WRITE: Count=33180, Max=2633, Min=14, Avg=163.54, 90=373, 99=497, 99.9=848, 99.99=2239] [UPDATE: Count=33180, Max=1054, Min=11, Avg=26.41, 90=35, 99=52, 99.9=74, 99.99=164] 
+2024-03-20 23:45:38:933 130 sec: 746086 operations; 6497.9 current ops/sec; est completion in 45 seconds [READ: Count=64979, Max=3043, Min=2, Avg=138.34, 90=346, 99=469, 99.9=533, 99.99=770] [READ-MODIFY-WRITE: Count=32469, Max=1687, Min=14, Avg=167.41, 90=383, 99=506, 99.9=591, 99.99=813] [UPDATE: Count=32469, Max=105, Min=11, Avg=27.51, 90=38, 99=53, 99.9=68, 99.99=83] 
+2024-03-20 23:45:48:933 140 sec: 806596 operations; 6051 current ops/sec; est completion in 34 seconds [READ: Count=60512, Max=1979, Min=2, Avg=149.49, 90=377, 99=549, 99.9=761, 99.99=1143] [READ-MODIFY-WRITE: Count=30335, Max=1304, Min=16, Avg=179.63, 90=416, 99=587, 99.9=821, 99.99=1197] [UPDATE: Count=30337, Max=680, Min=12, Avg=27.91, 90=38, 99=55, 99.9=76, 99.99=112] 
+2024-03-20 23:45:58:933 150 sec: 872290 operations; 6569.4 current ops/sec; est completion in 22 seconds [READ: Count=65692, Max=1717, Min=2, Avg=136.21, 90=345, 99=459, 99.9=527, 99.99=948] [READ-MODIFY-WRITE: Count=32799, Max=1815, Min=16, Avg=165.53, 90=381, 99=496, 99.9=578, 99.99=1117] [UPDATE: Count=32797, Max=948, Min=12, Avg=28.53, 90=39, 99=61, 99.9=91, 99.99=200] 
+2024-03-20 23:46:08:933 160 sec: 920525 operations; 4823.5 current ops/sec; est completion in 14 seconds [READ: Count=48235, Max=41983, Min=2, Avg=185.53, 90=375, 99=551, 99.9=11295, 99.99=37823] [READ-MODIFY-WRITE: Count=24282, Max=39455, Min=16, Avg=230.97, 90=436, 99=629, 99.9=13343, 99.99=38943] [UPDATE: Count=24282, Max=6799, Min=13, Avg=38.88, 90=67, 99=90, 99.9=146, 99.99=860] 
+2024-03-20 23:46:18:933 170 sec: 967980 operations; 4745.5 current ops/sec; est completion in 6 second [READ: Count=47460, Max=44447, Min=3, Avg=188.09, 90=373, 99=547, 99.9=12855, 99.99=39359] [READ-MODIFY-WRITE: Count=23631, Max=44575, Min=15, Avg=229.62, 90=428, 99=617, 99.9=12567, 99.99=39455] [UPDATE: Count=23636, Max=10023, Min=12, Avg=40.68, 90=64, 99=83, 99.9=111, 99.99=952] 
+Waiting for background work
+2024-03-20 23:46:28:933 180 sec: 1000000 operations; 3202 current ops/sec; [READ: Count=32015, Max=3395, Min=2, Avg=144.28, 90=357, 99=515, 99.9=1828, 99.99=2855] [READ-MODIFY-WRITE: Count=16021, Max=3485, Min=16, Avg=182.08, 90=408, 99=572, 99.9=1788, 99.99=2583] [UPDATE: Count=16016, Max=139, Min=12, Avg=36.64, 90=54, 99=69, 99.9=86, 99.99=121] 
+2024-03-20 23:46:38:933 190 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+Finished waiting for background work
+rocksdb.block.cache.miss COUNT : 3044218
+rocksdb.block.cache.hit COUNT : 1199609
+rocksdb.block.cache.add COUNT : 2075912
 rocksdb.block.cache.add.failures COUNT : 0
 rocksdb.block.cache.index.miss COUNT : 0
 rocksdb.block.cache.index.hit COUNT : 0
@@ -137,12 +44,12 @@ rocksdb.block.cache.filter.miss COUNT : 0
 rocksdb.block.cache.filter.hit COUNT : 0
 rocksdb.block.cache.filter.add COUNT : 0
 rocksdb.block.cache.filter.bytes.insert COUNT : 0
-rocksdb.block.cache.data.miss COUNT : 3082310
-rocksdb.block.cache.data.hit COUNT : 1097824
-rocksdb.block.cache.data.add COUNT : 1970089
-rocksdb.block.cache.data.bytes.insert COUNT : 9453450640
-rocksdb.block.cache.bytes.read COUNT : 5268066416
-rocksdb.block.cache.bytes.write COUNT : 9453450640
+rocksdb.block.cache.data.miss COUNT : 3044218
+rocksdb.block.cache.data.hit COUNT : 1199609
+rocksdb.block.cache.data.add COUNT : 2075912
+rocksdb.block.cache.data.bytes.insert COUNT : 9960766208
+rocksdb.block.cache.bytes.read COUNT : 5756324592
+rocksdb.block.cache.bytes.write COUNT : 9960766208
 rocksdb.bloom.filter.useful COUNT : 0
 rocksdb.bloom.filter.full.positive COUNT : 0
 rocksdb.bloom.filter.full.true.positive COUNT : 0
@@ -150,23 +57,23 @@ rocksdb.persistent.cache.hit COUNT : 0
 rocksdb.persistent.cache.miss COUNT : 0
 rocksdb.sim.block.cache.hit COUNT : 0
 rocksdb.sim.block.cache.miss COUNT : 0
-rocksdb.memtable.hit COUNT : 550806
-rocksdb.memtable.miss COUNT : 949091
-rocksdb.l0.hit COUNT : 47514
+rocksdb.memtable.hit COUNT : 550313
+rocksdb.memtable.miss COUNT : 949725
+rocksdb.l0.hit COUNT : 46743
 rocksdb.l1.hit COUNT : 0
-rocksdb.l2andup.hit COUNT : 901577
-rocksdb.compaction.key.drop.new COUNT : 103152
+rocksdb.l2andup.hit COUNT : 902982
+rocksdb.compaction.key.drop.new COUNT : 76583
 rocksdb.compaction.key.drop.obsolete COUNT : 0
 rocksdb.compaction.key.drop.range_del COUNT : 0
 rocksdb.compaction.key.drop.user COUNT : 0
 rocksdb.compaction.range_del.drop.obsolete COUNT : 0
 rocksdb.compaction.optimized.del.drop.obsolete COUNT : 0
 rocksdb.compaction.cancelled COUNT : 0
-rocksdb.number.keys.written COUNT : 499897
-rocksdb.number.keys.read COUNT : 1499897
+rocksdb.number.keys.written COUNT : 500038
+rocksdb.number.keys.read COUNT : 1500038
 rocksdb.number.keys.updated COUNT : 0
-rocksdb.bytes.written COUNT : 589824165
-rocksdb.bytes.read COUNT : 1709882580
+rocksdb.bytes.written COUNT : 589990796
+rocksdb.bytes.read COUNT : 1710043320
 rocksdb.number.db.seek COUNT : 0
 rocksdb.number.db.next COUNT : 0
 rocksdb.number.db.prev COUNT : 0
@@ -174,10 +81,10 @@ rocksdb.number.db.seek.found COUNT : 0
 rocksdb.number.db.next.found COUNT : 0
 rocksdb.number.db.prev.found COUNT : 0
 rocksdb.db.iter.bytes.read COUNT : 0
-rocksdb.no.file.opens COUNT : 1747
+rocksdb.no.file.opens COUNT : 1680
 rocksdb.no.file.errors COUNT : 0
 rocksdb.stall.micros COUNT : 0
-rocksdb.db.mutex.wait.micros COUNT : 2111618
+rocksdb.db.mutex.wait.micros COUNT : 18677892785
 rocksdb.number.multiget.get COUNT : 0
 rocksdb.number.multiget.keys.read COUNT : 0
 rocksdb.number.multiget.bytes.read COUNT : 0
@@ -188,13 +95,13 @@ rocksdb.bloom.filter.prefix.true.positive COUNT : 0
 rocksdb.number.reseeks.iteration COUNT : 0
 rocksdb.getupdatessince.calls COUNT : 0
 rocksdb.wal.synced COUNT : 0
-rocksdb.wal.bytes COUNT : 589824165
-rocksdb.write.self COUNT : 499897
+rocksdb.wal.bytes COUNT : 589990796
+rocksdb.write.self COUNT : 500038
 rocksdb.write.other COUNT : 0
-rocksdb.write.wal COUNT : 499897
-rocksdb.compact.read.bytes COUNT : 5228120556
-rocksdb.compact.write.bytes COUNT : 5208229891
-rocksdb.flush.write.bytes COUNT : 333235691
+rocksdb.write.wal COUNT : 500038
+rocksdb.compact.read.bytes COUNT : 4552968681
+rocksdb.compact.write.bytes COUNT : 4566189526
+rocksdb.flush.write.bytes COUNT : 333104442
 rocksdb.compact.read.marked.bytes COUNT : 0
 rocksdb.compact.read.periodic.bytes COUNT : 0
 rocksdb.compact.read.ttl.bytes COUNT : 0
@@ -202,15 +109,15 @@ rocksdb.compact.write.marked.bytes COUNT : 0
 rocksdb.compact.write.periodic.bytes COUNT : 0
 rocksdb.compact.write.ttl.bytes COUNT : 0
 rocksdb.number.direct.load.table.properties COUNT : 0
-rocksdb.number.superversion_acquires COUNT : 10
+rocksdb.number.superversion_acquires COUNT : 11
 rocksdb.number.superversion_releases COUNT : 5
 rocksdb.number.superversion_cleanups COUNT : 5
-rocksdb.number.block.compressed COUNT : 34
-rocksdb.number.block.decompressed COUNT : 1671
+rocksdb.number.block.compressed COUNT : 27
+rocksdb.number.block.decompressed COUNT : 1608
 rocksdb.number.block.not_compressed COUNT : 0
 rocksdb.merge.operation.time.nanos COUNT : 0
 rocksdb.filter.operation.time.nanos COUNT : 0
-rocksdb.compaction.total.time.cpu_micros COUNT : 31863909
+rocksdb.compaction.total.time.cpu_micros COUNT : 22641087
 rocksdb.row.cache.hit COUNT : 0
 rocksdb.row.cache.miss COUNT : 0
 rocksdb.read.amp.estimate.useful.bytes COUNT : 0
@@ -266,7 +173,7 @@ rocksdb.block.cache.data.add.redundant COUNT : 0
 rocksdb.block.cache.compression.dict.add.redundant COUNT : 0
 rocksdb.files.marked.trash COUNT : 0
 rocksdb.files.marked.trash.deleted COUNT : 0
-rocksdb.files.deleted.immediately COUNT : 81
+rocksdb.files.deleted.immediately COUNT : 77
 rocksdb.error.handler.bg.error.count COUNT : 0
 rocksdb.error.handler.bg.errro.count COUNT : 0
 rocksdb.error.handler.bg.io.error.count COUNT : 0
@@ -276,8 +183,8 @@ rocksdb.error.handler.bg.retryable.io.errro.count COUNT : 0
 rocksdb.error.handler.autoresume.count COUNT : 0
 rocksdb.error.handler.autoresume.retry.total.count COUNT : 0
 rocksdb.error.handler.autoresume.success.count COUNT : 0
-rocksdb.memtable.payload.bytes.at.flush COUNT : 527723193
-rocksdb.memtable.garbage.bytes.at.flush COUNT : 196252874
+rocksdb.memtable.payload.bytes.at.flush COUNT : 527725773
+rocksdb.memtable.garbage.bytes.at.flush COUNT : 196386690
 rocksdb.secondary.cache.hits COUNT : 0
 rocksdb.verify_checksum.read.bytes COUNT : 0
 rocksdb.backup.read.bytes COUNT : 0
@@ -290,10 +197,10 @@ rocksdb.cold.file.read.bytes COUNT : 0
 rocksdb.hot.file.read.count COUNT : 0
 rocksdb.warm.file.read.count COUNT : 0
 rocksdb.cold.file.read.count COUNT : 0
-rocksdb.last.level.read.bytes COUNT : 2589050842
-rocksdb.last.level.read.count COUNT : 511792
-rocksdb.non.last.level.read.bytes COUNT : 12136590831
-rocksdb.non.last.level.read.count COUNT : 2577506
+rocksdb.last.level.read.bytes COUNT : 2798887205
+rocksdb.last.level.read.count COUNT : 554058
+rocksdb.non.last.level.read.bytes COUNT : 11760455490
+rocksdb.non.last.level.read.count COUNT : 2496880
 rocksdb.last.level.seek.filtered COUNT : 0
 rocksdb.last.level.seek.filter.match COUNT : 0
 rocksdb.last.level.seek.data COUNT : 0
@@ -304,7 +211,7 @@ rocksdb.non.last.level.seek.filter.match COUNT : 0
 rocksdb.non.last.level.seek.data COUNT : 0
 rocksdb.non.last.level.seek.data.useful.no.filter COUNT : 0
 rocksdb.non.last.level.seek.data.useful.filter.match COUNT : 0
-rocksdb.block.checksum.compute.count COUNT : 3085804
+rocksdb.block.checksum.compute.count COUNT : 3047578
 rocksdb.block.checksum.mismatch.count COUNT : 0
 rocksdb.multiget.coroutine.count COUNT : 0
 rocksdb.blobdb.cache.miss COUNT : 0
@@ -322,49 +229,49 @@ rocksdb.table.open.prefetch.tail.miss COUNT : 0
 rocksdb.table.open.prefetch.tail.hit COUNT : 0
 rocksdb.timestamp.filter.table.checked COUNT : 0
 rocksdb.timestamp.filter.table.filtered COUNT : 0
-rocksdb.bytes.compressed.from COUNT : 11200953
-rocksdb.bytes.compressed.to COUNT : 6169108
-rocksdb.bytes.compression_bypassed COUNT : 3336654273
-rocksdb.bytes.compression.rejected COUNT : 2192665062
-rocksdb.number.block_compression_bypassed COUNT : 709809
-rocksdb.number.block_compression_rejected COUNT : 469050
-rocksdb.bytes.decompressed.from COUNT : 266841280
-rocksdb.bytes.decompressed.to COUNT : 487367074
+rocksdb.bytes.compressed.from COUNT : 7883525
+rocksdb.bytes.compressed.to COUNT : 4587385
+rocksdb.bytes.compression_bypassed COUNT : 3342865566
+rocksdb.bytes.compression.rejected COUNT : 1546554177
+rocksdb.number.block_compression_bypassed COUNT : 711129
+rocksdb.number.block_compression_rejected COUNT : 330829
+rocksdb.bytes.decompressed.from COUNT : 278459474
+rocksdb.bytes.decompressed.to COUNT : 482304125
 rocksdb.readahead.trimmed COUNT : 0
-rocksdb.db.get.micros P50 : 13.616240 P95 : 371.946683 P99 : 544.509532 P100 : 46889.000000 COUNT : 1499897 SUM : 152603251
-rocksdb.db.write.micros P50 : 14.929313 P95 : 30.729300 P99 : 41.501702 P100 : 9858.000000 COUNT : 499897 SUM : 8530321
-rocksdb.compaction.times.micros P50 : 6500000.000000 P95 : 27039623.000000 P99 : 27039623.000000 P100 : 27039623.000000 COUNT : 10 SUM : 87226494
-rocksdb.compaction.times.cpu_micros P50 : 2233333.333333 P95 : 8533346.000000 P99 : 8533346.000000 P100 : 8533346.000000 COUNT : 10 SUM : 31863909
+rocksdb.db.get.micros P50 : 12.863177 P95 : 364.717018 P99 : 532.589501 P100 : 44412.000000 COUNT : 1500038 SUM : 156784630
+rocksdb.db.write.micros P50 : 13.720647 P95 : 26.600051 P99 : 33.430588 P100 : 9972.000000 COUNT : 500038 SUM : 7563767
+rocksdb.compaction.times.micros P50 : 5400000.000000 P95 : 28050000.000000 P99 : 30183798.000000 P100 : 30183798.000000 COUNT : 9 SUM : 70424343
+rocksdb.compaction.times.cpu_micros P50 : 1725000.000000 P95 : 7698440.000000 P99 : 7698440.000000 P100 : 7698440.000000 COUNT : 9 SUM : 22641087
 rocksdb.subcompaction.setup.times.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.table.sync.micros P50 : 125000.000000 P95 : 165500.000000 P99 : 165501.000000 P100 : 165501.000000 COUNT : 3 SUM : 367627
-rocksdb.compaction.outfile.sync.micros P50 : 62250.000000 P95 : 111500.000000 P99 : 202203.000000 P100 : 202203.000000 COUNT : 79 SUM : 5031310
+rocksdb.table.sync.micros P50 : 125000.000000 P95 : 149897.000000 P99 : 149897.000000 P100 : 149897.000000 COUNT : 3 SUM : 347683
+rocksdb.compaction.outfile.sync.micros P50 : 68750.000000 P95 : 238222.222222 P99 : 281112.000000 P100 : 281112.000000 COUNT : 73 SUM : 6731574
 rocksdb.wal.file.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.manifest.file.sync.micros P50 : 215.000000 P95 : 417.000000 P99 : 417.000000 P100 : 417.000000 COUNT : 13 SUM : 2788
-rocksdb.table.open.io.micros P50 : 2635.507246 P95 : 11340.694444 P99 : 29046.111111 P100 : 115630.000000 COUNT : 1747 SUM : 6810316
+rocksdb.manifest.file.sync.micros P50 : 183.333333 P95 : 302.000000 P99 : 336.000000 P100 : 336.000000 COUNT : 12 SUM : 2305
+rocksdb.table.open.io.micros P50 : 5542.635659 P95 : 13240.740741 P99 : 22733.333333 P100 : 29735.000000 COUNT : 1680 SUM : 9817904
 rocksdb.db.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.read.block.compaction.micros P50 : 3.804482 P95 : 163.238278 P99 : 170.599522 P100 : 15373.000000 COUNT : 1112221 SUM : 58853461
-rocksdb.read.block.get.micros P50 : 7.387624 P95 : 197.559937 P99 : 242.698504 P100 : 115576.000000 COUNT : 1971836 SUM : 131996223
-rocksdb.write.raw.block.micros P50 : 0.876306 P95 : 1.987875 P99 : 2.969938 P100 : 13174.000000 COUNT : 1179057 SUM : 6672341
-rocksdb.numfiles.in.singlecompaction P50 : 4.000000 P95 : 20.250000 P99 : 21.650000 P100 : 22.000000 COUNT : 10 SUM : 77
+rocksdb.read.block.compaction.micros P50 : 3.315016 P95 : 162.375718 P99 : 169.228737 P100 : 13471.000000 COUNT : 968306 SUM : 48142520
+rocksdb.read.block.get.micros P50 : 5.932815 P95 : 168.352172 P99 : 235.297023 P100 : 25865.000000 COUNT : 2077592 SUM : 138184016
+rocksdb.write.raw.block.micros P50 : 0.660045 P95 : 1.846644 P99 : 2.728249 P100 : 2406.000000 COUNT : 1042137 SUM : 5045683
+rocksdb.numfiles.in.singlecompaction P50 : 4.333333 P95 : 23.000000 P99 : 23.000000 P100 : 23.000000 COUNT : 9 SUM : 73
 rocksdb.db.seek.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.db.write.stall P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.sst.read.micros P50 : 3.174376 P95 : 166.993315 P99 : 231.389542 P100 : 115115.000000 COUNT : 3089298 SUM : 183303535
-rocksdb.file.read.flush.micros P50 : 2.000000 P95 : 216.000000 P99 : 216.000000 P100 : 216.000000 COUNT : 8 SUM : 435
-rocksdb.file.read.compaction.micros P50 : 2.319432 P95 : 162.905854 P99 : 169.641240 P100 : 15365.000000 COUNT : 1112537 SUM : 56930026
-rocksdb.file.read.db.open.micros P50 : 2.379494 P95 : 3900.558659 P99 : 7105.371429 P100 : 115115.000000 COUNT : 6664 SUM : 4722650
-rocksdb.file.read.get.micros P50 : 3.538607 P95 : 169.331673 P99 : 236.468286 P100 : 40664.000000 COUNT : 1970089 SUM : 121650424
+rocksdb.sst.read.micros P50 : 2.902032 P95 : 165.264056 P99 : 220.187498 P100 : 25849.000000 COUNT : 3050938 SUM : 183340789
+rocksdb.file.read.flush.micros P50 : 2.000000 P95 : 226.000000 P99 : 226.000000 P100 : 226.000000 COUNT : 8 SUM : 445
+rocksdb.file.read.compaction.micros P50 : 1.916985 P95 : 162.197416 P99 : 169.032065 P100 : 13465.000000 COUNT : 968598 SUM : 46753004
+rocksdb.file.read.db.open.micros P50 : 28.531646 P95 : 6139.659367 P99 : 11168.437500 P100 : 25597.000000 COUNT : 6420 SUM : 8195507
+rocksdb.file.read.get.micros P50 : 3.168507 P95 : 166.442864 P99 : 226.797531 P100 : 25849.000000 COUNT : 2075912 SUM : 128391833
 rocksdb.file.read.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.file.read.db.iterator.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.file.read.verify.db.checksum.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.file.read.verify.file.checksums.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.num.subcompactions.scheduled P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.bytes.per.read P50 : 1140.000000 P95 : 1140.000000 P99 : 1140.000000 P100 : 1140.000000 COUNT : 1499897 SUM : 1709882580
-rocksdb.bytes.per.write P50 : 1174.000000 P95 : 1180.000000 P99 : 1180.000000 P100 : 1180.000000 COUNT : 499897 SUM : 589824165
+rocksdb.bytes.per.read P50 : 1140.000000 P95 : 1140.000000 P99 : 1140.000000 P100 : 1140.000000 COUNT : 1500038 SUM : 1710043320
+rocksdb.bytes.per.write P50 : 1174.000000 P95 : 1180.000000 P99 : 1180.000000 P100 : 1180.000000 COUNT : 500038 SUM : 589990796
 rocksdb.bytes.per.multiget P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.bytes.compressed P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.bytes.decompressed P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.compression.times.nanos P50 : 193.448885 P95 : 13854.853311 P99 : 20551.573039 P100 : 4189850.000000 COUNT : 1178893 SUM : 5642753214
-rocksdb.decompression.times.nanos P50 : 443235.294118 P95 : 2528260.869565 P99 : 20016842.105263 P100 : 56882100.000000 COUNT : 1671 SUM : 1666755014
+rocksdb.compression.times.nanos P50 : 148.004105 P95 : 8787.376872 P99 : 12704.247597 P100 : 1046469.000000 COUNT : 1041985 SUM : 2377440169
+rocksdb.decompression.times.nanos P50 : 672010.050251 P95 : 2247619.047619 P99 : 6173142.857143 P100 : 23701450.000000 COUNT : 1608 SUM : 1277156722
 rocksdb.read.num.merge_operands P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.blobdb.key.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.blobdb.value.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
@@ -379,7 +286,7 @@ rocksdb.blobdb.blob.file.read.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.00000
 rocksdb.blobdb.blob.file.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.blobdb.compression.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.blobdb.decompression.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
-rocksdb.db.flush.micros P50 : 606386.000000 P95 : 606386.000000 P99 : 606386.000000 P100 : 606386.000000 COUNT : 2 SUM : 1206327
+rocksdb.db.flush.micros P50 : 570000.000000 P95 : 574427.000000 P99 : 574427.000000 P100 : 574427.000000 COUNT : 2 SUM : 1127845
 rocksdb.sst.batch.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.num.index.and.filter.blocks.read.per.level P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.num.sst.read.per.level P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
@@ -392,4 +299,4 @@ rocksdb.num.level.read.per.multiget P50 : 0.000000 P95 : 0.000000 P99 : 0.000000
 rocksdb.async.prefetch.abort.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 rocksdb.table.open.prefetch.tail.read.bytes P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
 
-2024-03-09 18:22:11:409 773 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=1, Max=600309759, Min=599785472, Avg=600047616, 90=600309759, 99=600309759, 99.9=600309759, 99.99=600309759] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2024-03-20 23:46:44:922 195 sec: 1000000 operations; 0 current ops/sec; [READ: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [READ-MODIFY-WRITE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [CLEANUP: Count=1, Max=20709375, Min=20692992, Avg=20701184, 90=20709375, 99=20709375, 99.9=20709375, 99.99=20709375] [UPDATE: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 

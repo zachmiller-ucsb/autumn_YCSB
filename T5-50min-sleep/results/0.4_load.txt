@@ -1,2 +1,0 @@
-Autumn C set to 0.4
-Multiplier set to 5.0
