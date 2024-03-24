@@ -1,0 +1,25 @@
+[OVERALL], Compaction time(ms): 30001
+[OVERALL], RunTime(ms), 174415
+[OVERALL], Throughput(ops/sec), 5733.451824671043
+[TOTAL_GCS_G1_Young_Generation], Count, 20
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 30
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.01720035547401313
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 20
+[TOTAL_GC_TIME], Time(ms), 30
+[TOTAL_GC_TIME_%], Time(%), 0.01720035547401313
+[READ], Operations, 1000000
+[READ], AverageLatency(us), 140.282908
+[READ], MinLatency(us), 3
+[READ], MaxLatency(us), 10711
+[READ], 95thPercentileLatency(us), 446
+[READ], 99thPercentileLatency(us), 552
+[READ], Return=OK, 1000000
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 3.0040064E7
+[CLEANUP], MinLatency(us), 30031872
+[CLEANUP], MaxLatency(us), 30048255
+[CLEANUP], 95thPercentileLatency(us), 30048255
+[CLEANUP], 99thPercentileLatency(us), 30048255
