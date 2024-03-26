@@ -1,0 +1,28 @@
+Setting max_bytes_for_level_multiplier = 7.0
+Setting max_bytes_for_level_multiplier = 7.0
+Setting Autumn C = 0.8
+[OVERALL], Compaction time(ms): 1099388
+[OVERALL], RunTime(ms), 9936980
+[OVERALL], Throughput(ops/sec), 8050.73573661213
+[TOTAL_GCS_G1_Young_Generation], Count, 3931
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 2724
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.027412755183164304
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 3931
+[TOTAL_GC_TIME], Time(ms), 2724
+[TOTAL_GC_TIME_%], Time(%), 0.027412755183164304
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1.099431936E9
+[CLEANUP], MinLatency(us), 1098907648
+[CLEANUP], MaxLatency(us), 1099956223
+[CLEANUP], 95thPercentileLatency(us), 1099956223
+[CLEANUP], 99thPercentileLatency(us), 1099956223
+[INSERT], Operations, 80000000
+[INSERT], AverageLatency(us), 108.43846315
+[INSERT], MinLatency(us), 6
+[INSERT], MaxLatency(us), 3178495
+[INSERT], 95thPercentileLatency(us), 1078
+[INSERT], 99thPercentileLatency(us), 2155
+[INSERT], Return=OK, 80000000
