@@ -1,0 +1,34 @@
+Setting max_bytes_for_level_multiplier = 5.0
+Setting Autumn C = 0.6
+[OVERALL], Compaction time(ms): 77773
+[OVERALL], RunTime(ms), 225610
+[OVERALL], Throughput(ops/sec), 4432.427640618767
+[TOTAL_GCS_G1_Young_Generation], Count, 42
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 61
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.02703780860777448
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 42
+[TOTAL_GC_TIME], Time(ms), 61
+[TOTAL_GC_TIME_%], Time(%), 0.02703780860777448
+[READ], Operations, 500584
+[READ], AverageLatency(us), 132.34460150544163
+[READ], MinLatency(us), 2
+[READ], MaxLatency(us), 37311
+[READ], 95thPercentileLatency(us), 365
+[READ], 99thPercentileLatency(us), 483
+[READ], Return=OK, 500584
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 7.7824E7
+[CLEANUP], MinLatency(us), 77791232
+[CLEANUP], MaxLatency(us), 77856767
+[CLEANUP], 95thPercentileLatency(us), 77856767
+[CLEANUP], 99thPercentileLatency(us), 77856767
+[UPDATE], Operations, 499416
+[UPDATE], AverageLatency(us), 153.61928332292118
+[UPDATE], MinLatency(us), 10
+[UPDATE], MaxLatency(us), 33983
+[UPDATE], 95thPercentileLatency(us), 393
+[UPDATE], 99thPercentileLatency(us), 509
+[UPDATE], Return=OK, 499416

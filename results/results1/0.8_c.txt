@@ -1,0 +1,27 @@
+Setting max_bytes_for_level_multiplier = 5.0
+Setting Autumn C = 0.8
+[OVERALL], Compaction time(ms): 30001
+[OVERALL], RunTime(ms), 199362
+[OVERALL], Throughput(ops/sec), 5016.001043328217
+[TOTAL_GCS_G1_Young_Generation], Count, 20
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 30
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.01504800312998465
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 20
+[TOTAL_GC_TIME], Time(ms), 30
+[TOTAL_GC_TIME_%], Time(%), 0.01504800312998465
+[READ], Operations, 1000000
+[READ], AverageLatency(us), 165.388248
+[READ], MinLatency(us), 3
+[READ], MaxLatency(us), 9983
+[READ], 95thPercentileLatency(us), 482
+[READ], 99thPercentileLatency(us), 633
+[READ], Return=OK, 1000000
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 3.0040064E7
+[CLEANUP], MinLatency(us), 30031872
+[CLEANUP], MaxLatency(us), 30048255
+[CLEANUP], 95thPercentileLatency(us), 30048255
+[CLEANUP], 99thPercentileLatency(us), 30048255

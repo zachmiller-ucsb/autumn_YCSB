@@ -1,0 +1,363 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -pl site.ycsb:rocksdb-binding -am package -DskipTests dependency:build-classpath -DincludeScope=compile -Dmdep.outputFilterFile=true'
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java -cp /home/ubuntu/YCSB/rocksdb/conf:/home/ubuntu/YCSB/rocksdb/target/rocksdb-binding-0.18.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/ubuntu/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/ubuntu/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.4/HdrHistogram-2.1.4.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/home/ubuntu/.m2/repository/org/rocksdb/rocksdbjni/8.5.4/rocksdbjni-8.5.4.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/home/ubuntu/YCSB/core/target/core-0.18.0-SNAPSHOT.jar site.ycsb.Client -db site.ycsb.db.rocksdb.RocksDBClient -s -P workloads/workloade -p rocksdb.dir=/ycsb -p c=0.4 -p T=5 -t
+Command line: -db site.ycsb.db.rocksdb.RocksDBClient -s -P workloads/workloade -p rocksdb.dir=/ycsb -p c=0.4 -p T=5 -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-03-28 13:03:48:511 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2024-03-28 13:03:58:452 10 sec: 6079 operations; 607.84 current ops/sec; est completion in 27 minutes [INSERT: Count=269, Max=4819, Min=26, Avg=131.01, 90=116, 99=1255, 99.9=4819, 99.99=4819] [SCAN: Count=5813, Max=45407, Min=40, Avg=1165.17, 90=1870, 99=4555, 99.9=19087, 99.99=38975] 
+2024-03-28 13:04:08:451 20 sec: 16277 operations; 1019.9 current ops/sec; est completion in 20 minutes [INSERT: Count=539, Max=134, Min=13, Avg=49.17, 90=66, 99=89, 99.9=117, 99.99=134] [SCAN: Count=9656, Max=185727, Min=27, Avg=1027.03, 90=1752, 99=2897, 99.9=17023, 99.99=44351] 
+2024-03-28 13:04:18:451 30 sec: 27535 operations; 1125.8 current ops/sec; est completion in 17 minutes [INSERT: Count=549, Max=286, Min=14, Avg=46.41, 90=58, 99=134, 99.9=152, 99.99=286] [SCAN: Count=10709, Max=38399, Min=22, Avg=925.91, 90=1704, 99=2393, 99.9=8335, 99.99=31599] 
+2024-03-28 13:04:28:451 40 sec: 40341 operations; 1280.6 current ops/sec; est completion in 15 minutes [INSERT: Count=630, Max=79, Min=12, Avg=40.51, 90=53, 99=66, 99.9=76, 99.99=79] [SCAN: Count=12179, Max=36095, Min=14, Avg=815.74, 90=1573, 99=1995, 99.9=4499, 99.99=8207] 
+2024-03-28 13:04:38:451 50 sec: 54110 operations; 1376.9 current ops/sec; est completion in 14 minutes [INSERT: Count=658, Max=88, Min=9, Avg=37.93, 90=53, 99=73, 99.9=84, 99.99=88] [SCAN: Count=13109, Max=4951, Min=14, Avg=758.01, 90=1528, 99=1913, 99.9=2119, 99.99=2811] 
+2024-03-28 13:04:48:451 60 sec: 67865 operations; 1375.5 current ops/sec; est completion in 13 minutes [INSERT: Count=664, Max=82, Min=11, Avg=35.23, 90=45, 99=62, 99.9=68, 99.99=82] [SCAN: Count=13090, Max=4009, Min=16, Avg=759.09, 90=1543, 99=1917, 99.9=2119, 99.99=2459] 
+2024-03-28 13:04:58:451 70 sec: 81864 operations; 1399.9 current ops/sec; est completion in 13 minutes [INSERT: Count=741, Max=712, Min=11, Avg=36.24, 90=46, 99=56, 99.9=60, 99.99=712] [SCAN: Count=13258, Max=4495, Min=17, Avg=750.19, 90=1524, 99=1930, 99.9=2135, 99.99=3267] 
+2024-03-28 13:05:08:451 80 sec: 95928 operations; 1406.4 current ops/sec; est completion in 12 minutes [INSERT: Count=712, Max=102, Min=10, Avg=37.88, 90=53, 99=69, 99.9=77, 99.99=102] [SCAN: Count=13353, Max=2561, Min=15, Avg=744.76, 90=1544, 99=1917, 99.9=2145, 99.99=2499] 
+2024-03-28 13:05:18:451 90 sec: 109043 operations; 1311.5 current ops/sec; est completion in 12 minutes [INSERT: Count=648, Max=76, Min=11, Avg=37.01, 90=50, 99=63, 99.9=71, 99.99=76] [SCAN: Count=12466, Max=8839, Min=20, Avg=798.07, 90=1673, 99=2191, 99.9=2471, 99.99=2743] 
+2024-03-28 13:05:28:451 100 sec: 122756 operations; 1371.3 current ops/sec; est completion in 11 minutes [INSERT: Count=655, Max=78, Min=11, Avg=36.4, 90=49, 99=60, 99.9=71, 99.99=78] [SCAN: Count=13058, Max=2961, Min=19, Avg=761.85, 90=1588, 99=2031, 99.9=2415, 99.99=2695] 
+2024-03-28 13:05:38:451 110 sec: 137104 operations; 1434.8 current ops/sec; est completion in 11 minutes [INSERT: Count=719, Max=72, Min=11, Avg=35.6, 90=46, 99=60, 99.9=70, 99.99=72] [SCAN: Count=13630, Max=5595, Min=18, Avg=729.86, 90=1547, 99=1932, 99.9=2087, 99.99=2547] 
+2024-03-28 13:05:48:451 120 sec: 151398 operations; 1429.4 current ops/sec; est completion in 11 minutes [INSERT: Count=747, Max=73, Min=11, Avg=34.54, 90=46, 99=61, 99.9=68, 99.99=73] [SCAN: Count=13547, Max=3219, Min=20, Avg=734.32, 90=1556, 99=1946, 99.9=2103, 99.99=2645] 
+2024-03-28 13:05:58:451 130 sec: 165218 operations; 1382 current ops/sec; est completion in 10 minutes [INSERT: Count=690, Max=76, Min=11, Avg=35.33, 90=45, 99=60, 99.9=72, 99.99=76] [SCAN: Count=13130, Max=5051, Min=20, Avg=757.68, 90=1589, 99=1998, 99.9=2227, 99.99=2577] 
+2024-03-28 13:06:08:451 140 sec: 178221 operations; 1300.3 current ops/sec; est completion in 10 minutes [INSERT: Count=646, Max=651, Min=11, Avg=35.95, 90=45, 99=57, 99.9=71, 99.99=651] [SCAN: Count=12356, Max=2521, Min=15, Avg=805.31, 90=1670, 99=2083, 99.9=2315, 99.99=2437] 
+2024-03-28 13:06:18:451 150 sec: 190994 operations; 1277.3 current ops/sec; est completion in 10 minutes [INSERT: Count=625, Max=89, Min=11, Avg=37.17, 90=51, 99=68, 99.9=74, 99.99=89] [SCAN: Count=12150, Max=2751, Min=18, Avg=819.19, 90=1685, 99=2101, 99.9=2321, 99.99=2691] 
+2024-03-28 13:06:28:451 160 sec: 203667 operations; 1267.3 current ops/sec; est completion in 10 minutes [INSERT: Count=620, Max=75, Min=11, Avg=36.75, 90=48, 99=62, 99.9=68, 99.99=75] [SCAN: Count=12054, Max=2965, Min=14, Avg=825.69, 90=1696, 99=2123, 99.9=2337, 99.99=2891] 
+2024-03-28 13:06:38:451 170 sec: 216628 operations; 1296.1 current ops/sec; est completion in 10 minutes [INSERT: Count=633, Max=70, Min=12, Avg=36.5, 90=48, 99=62, 99.9=67, 99.99=70] [SCAN: Count=12327, Max=2987, Min=19, Avg=807.3, 90=1678, 99=2125, 99.9=2373, 99.99=2787] 
+2024-03-28 13:06:48:451 180 sec: 229674 operations; 1304.6 current ops/sec; est completion in 10 minutes [INSERT: Count=638, Max=66, Min=11, Avg=35.38, 90=46, 99=58, 99.9=64, 99.99=66] [SCAN: Count=12406, Max=2887, Min=20, Avg=802.19, 90=1681, 99=2109, 99.9=2355, 99.99=2553] 
+2024-03-28 13:06:58:451 190 sec: 242739 operations; 1306.5 current ops/sec; est completion in 9 minutes [INSERT: Count=681, Max=77, Min=10, Avg=35.08, 90=47, 99=59, 99.9=68, 99.99=77] [SCAN: Count=12385, Max=3269, Min=20, Avg=803.55, 90=1678, 99=2105, 99.9=2339, 99.99=2775] 
+2024-03-28 13:07:08:451 200 sec: 255641 operations; 1290.2 current ops/sec; est completion in 9 minutes [INSERT: Count=679, Max=84, Min=11, Avg=36.97, 90=50, 99=64, 99.9=73, 99.99=84] [SCAN: Count=12223, Max=3573, Min=16, Avg=814.01, 90=1684, 99=2097, 99.9=2313, 99.99=2699] 
+2024-03-28 13:07:18:451 210 sec: 268855 operations; 1321.4 current ops/sec; est completion in 9 minutes [INSERT: Count=658, Max=84, Min=12, Avg=38.9, 90=53, 99=63, 99.9=70, 99.99=84] [SCAN: Count=12555, Max=2769, Min=16, Avg=792.28, 90=1670, 99=2081, 99.9=2295, 99.99=2499] 
+2024-03-28 13:07:28:451 220 sec: 282027 operations; 1317.2 current ops/sec; est completion in 9 minutes [INSERT: Count=664, Max=69, Min=12, Avg=36.16, 90=49, 99=63, 99.9=66, 99.99=69] [SCAN: Count=12508, Max=5471, Min=21, Avg=795.54, 90=1666, 99=2087, 99.9=2357, 99.99=3429] 
+2024-03-28 13:07:38:451 230 sec: 295086 operations; 1305.9 current ops/sec; est completion in 9 minutes [INSERT: Count=624, Max=91, Min=13, Avg=39.18, 90=52, 99=66, 99.9=74, 99.99=91] [SCAN: Count=12435, Max=12095, Min=17, Avg=800.11, 90=1697, 99=2145, 99.9=2429, 99.99=2751] 
+2024-03-28 13:07:48:451 240 sec: 308265 operations; 1317.9 current ops/sec; est completion in 8 minutes [INSERT: Count=631, Max=85, Min=12, Avg=38.17, 90=50, 99=63, 99.9=73, 99.99=85] [SCAN: Count=12548, Max=3015, Min=16, Avg=792.98, 90=1682, 99=2111, 99.9=2349, 99.99=2707] 
+2024-03-28 13:07:58:451 250 sec: 321540 operations; 1327.5 current ops/sec; est completion in 8 minutes [INSERT: Count=653, Max=72, Min=11, Avg=38.55, 90=51, 99=66, 99.9=71, 99.99=72] [SCAN: Count=12622, Max=3255, Min=21, Avg=788.17, 90=1675, 99=2119, 99.9=2353, 99.99=3063] 
+2024-03-28 13:08:08:451 260 sec: 334675 operations; 1313.5 current ops/sec; est completion in 8 minutes [INSERT: Count=654, Max=654, Min=11, Avg=39.91, 90=52, 99=69, 99.9=77, 99.99=654] [SCAN: Count=12481, Max=2929, Min=19, Avg=796.95, 90=1683, 99=2129, 99.9=2359, 99.99=2559] 
+2024-03-28 13:08:18:451 270 sec: 347904 operations; 1322.9 current ops/sec; est completion in 8 minutes [INSERT: Count=665, Max=82, Min=13, Avg=41.92, 90=57, 99=69, 99.9=81, 99.99=82] [SCAN: Count=12564, Max=2723, Min=16, Avg=791.58, 90=1683, 99=2119, 99.9=2323, 99.99=2579] 
+2024-03-28 13:08:28:451 280 sec: 359982 operations; 1207.8 current ops/sec; est completion in 8 minutes [INSERT: Count=585, Max=83, Min=13, Avg=41.32, 90=54, 99=65, 99.9=72, 99.99=83] [SCAN: Count=11493, Max=10007, Min=22, Avg=865.85, 90=1861, 99=2435, 99.9=2767, 99.99=3415] 
+2024-03-28 13:08:38:451 290 sec: 372946 operations; 1296.4 current ops/sec; est completion in 8 minutes [INSERT: Count=621, Max=98, Min=12, Avg=42.85, 90=59, 99=70, 99.9=92, 99.99=98] [SCAN: Count=12343, Max=2849, Min=16, Avg=805.93, 90=1685, 99=2117, 99.9=2371, 99.99=2813] 
+2024-03-28 13:08:48:451 300 sec: 385946 operations; 1300 current ops/sec; est completion in 7 minutes [INSERT: Count=605, Max=106, Min=12, Avg=42.18, 90=57, 99=72, 99.9=81, 99.99=106] [SCAN: Count=12395, Max=2629, Min=19, Avg=802.6, 90=1687, 99=2131, 99.9=2331, 99.99=2557] 
+2024-03-28 13:08:58:451 310 sec: 398675 operations; 1272.9 current ops/sec; est completion in 7 minutes [INSERT: Count=639, Max=123, Min=13, Avg=43.26, 90=58, 99=72, 99.9=84, 99.99=123] [SCAN: Count=12091, Max=2837, Min=22, Avg=822.68, 90=1711, 99=2139, 99.9=2333, 99.99=2735] 
+2024-03-28 13:09:08:451 320 sec: 411569 operations; 1289.4 current ops/sec; est completion in 7 minutes [INSERT: Count=660, Max=70, Min=13, Avg=38.59, 90=50, 99=61, 99.9=68, 99.99=70] [SCAN: Count=12235, Max=2853, Min=24, Avg=813.12, 90=1700, 99=2135, 99.9=2373, 99.99=2847] 
+2024-03-28 13:09:18:451 330 sec: 424203 operations; 1263.4 current ops/sec; est completion in 7 minutes [INSERT: Count=598, Max=100, Min=13, Avg=42.32, 90=59, 99=76, 99.9=89, 99.99=100] [SCAN: Count=12034, Max=4511, Min=13, Avg=826.62, 90=1712, 99=2149, 99.9=2405, 99.99=2617] 
+2024-03-28 13:09:28:451 340 sec: 436881 operations; 1267.8 current ops/sec; est completion in 7 minutes [INSERT: Count=648, Max=83, Min=14, Avg=42.36, 90=58, 99=72, 99.9=80, 99.99=83] [SCAN: Count=12031, Max=3297, Min=22, Avg=826.82, 90=1707, 99=2145, 99.9=2365, 99.99=2699] 
+2024-03-28 13:09:38:451 350 sec: 449664 operations; 1278.3 current ops/sec; est completion in 7 minutes [INSERT: Count=631, Max=91, Min=14, Avg=44.15, 90=59, 99=71, 99.9=80, 99.99=91] [SCAN: Count=12151, Max=2877, Min=23, Avg=818.49, 90=1704, 99=2137, 99.9=2421, 99.99=2841] 
+2024-03-28 13:09:48:451 360 sec: 462582 operations; 1291.8 current ops/sec; est completion in 6 minutes [INSERT: Count=628, Max=72, Min=13, Avg=38.58, 90=51, 99=65, 99.9=68, 99.99=72] [SCAN: Count=12290, Max=2471, Min=23, Avg=809.57, 90=1699, 99=2123, 99.9=2343, 99.99=2453] 
+2024-03-28 13:09:58:451 370 sec: 475388 operations; 1280.6 current ops/sec; est completion in 6 minutes [INSERT: Count=639, Max=103, Min=14, Avg=39.14, 90=53, 99=70, 99.9=85, 99.99=103] [SCAN: Count=12167, Max=3855, Min=24, Avg=817.79, 90=1717, 99=2129, 99.9=2383, 99.99=2649] 
+2024-03-28 13:10:08:451 380 sec: 488341 operations; 1295.3 current ops/sec; est completion in 6 minutes [INSERT: Count=626, Max=145, Min=12, Avg=39.03, 90=51, 99=64, 99.9=77, 99.99=145] [SCAN: Count=12328, Max=2977, Min=20, Avg=807.14, 90=1687, 99=2133, 99.9=2351, 99.99=2615] 
+2024-03-28 13:10:18:451 390 sec: 501235 operations; 1289.4 current ops/sec; est completion in 6 minutes [INSERT: Count=607, Max=85, Min=12, Avg=40.63, 90=54, 99=67, 99.9=85, 99.99=85] [SCAN: Count=12286, Max=2815, Min=17, Avg=809.82, 90=1706, 99=2139, 99.9=2343, 99.99=2533] 
+2024-03-28 13:10:28:451 400 sec: 514119 operations; 1288.4 current ops/sec; est completion in 6 minutes [INSERT: Count=637, Max=73, Min=13, Avg=39.46, 90=52, 99=68, 99.9=73, 99.99=73] [SCAN: Count=12247, Max=2911, Min=22, Avg=812.33, 90=1714, 99=2147, 99.9=2385, 99.99=2769] 
+2024-03-28 13:10:38:451 410 sec: 527135 operations; 1301.6 current ops/sec; est completion in 6 minutes [INSERT: Count=666, Max=84, Min=12, Avg=38.72, 90=53, 99=69, 99.9=81, 99.99=84] [SCAN: Count=12351, Max=2851, Min=21, Avg=805.57, 90=1699, 99=2139, 99.9=2395, 99.99=2757] 
+2024-03-28 13:10:48:451 420 sec: 540019 operations; 1288.4 current ops/sec; est completion in 5 minutes [INSERT: Count=676, Max=80, Min=13, Avg=38.85, 90=49, 99=65, 99.9=73, 99.99=80] [SCAN: Count=12207, Max=2853, Min=17, Avg=814.89, 90=1698, 99=2129, 99.9=2405, 99.99=2523] 
+2024-03-28 13:10:58:451 430 sec: 553200 operations; 1318.1 current ops/sec; est completion in 5 minutes [INSERT: Count=647, Max=87, Min=13, Avg=38.65, 90=49, 99=66, 99.9=81, 99.99=87] [SCAN: Count=12535, Max=2479, Min=18, Avg=793.76, 90=1680, 99=2103, 99.9=2285, 99.99=2445] 
+2024-03-28 13:11:08:451 440 sec: 566156 operations; 1295.6 current ops/sec; est completion in 5 minutes [INSERT: Count=709, Max=90, Min=13, Avg=38.67, 90=50, 99=62, 99.9=69, 99.99=90] [SCAN: Count=12246, Max=2563, Min=18, Avg=812.18, 90=1700, 99=2135, 99.9=2387, 99.99=2525] 
+2024-03-28 13:11:18:451 450 sec: 579073 operations; 1291.7 current ops/sec; est completion in 5 minutes [INSERT: Count=653, Max=89, Min=14, Avg=40.54, 90=54, 99=65, 99.9=77, 99.99=89] [SCAN: Count=12264, Max=2809, Min=19, Avg=811.09, 90=1696, 99=2129, 99.9=2347, 99.99=2451] 
+2024-03-28 13:11:28:451 460 sec: 590974 operations; 1190.1 current ops/sec; est completion in 5 minutes [INSERT: Count=592, Max=79, Min=13, Avg=40.51, 90=54, 99=72, 99.9=78, 99.99=79] [SCAN: Count=11309, Max=3583, Min=15, Avg=879.99, 90=1871, 99=2413, 99.9=2793, 99.99=3207] 
+2024-03-28 13:11:38:451 470 sec: 603869 operations; 1289.5 current ops/sec; est completion in 5 minutes [INSERT: Count=681, Max=85, Min=12, Avg=39.14, 90=52, 99=69, 99.9=80, 99.99=85] [SCAN: Count=12214, Max=4295, Min=15, Avg=814.51, 90=1713, 99=2161, 99.9=2467, 99.99=2759] 
+2024-03-28 13:11:48:451 480 sec: 616854 operations; 1298.5 current ops/sec; est completion in 4 minutes [INSERT: Count=725, Max=78, Min=14, Avg=38.22, 90=48, 99=58, 99.9=67, 99.99=78] [SCAN: Count=12261, Max=3035, Min=24, Avg=811.33, 90=1696, 99=2147, 99.9=2403, 99.99=2651] 
+2024-03-28 13:11:58:451 490 sec: 629754 operations; 1290 current ops/sec; est completion in 4 minutes [INSERT: Count=664, Max=86, Min=13, Avg=41.76, 90=57, 99=72, 99.9=83, 99.99=86] [SCAN: Count=12235, Max=2833, Min=14, Avg=812.92, 90=1707, 99=2141, 99.9=2345, 99.99=2595] 
+2024-03-28 13:12:08:451 500 sec: 642659 operations; 1290.5 current ops/sec; est completion in 4 minutes [INSERT: Count=657, Max=76, Min=12, Avg=38.76, 90=52, 99=64, 99.9=70, 99.99=76] [SCAN: Count=12249, Max=2909, Min=21, Avg=812.25, 90=1701, 99=2127, 99.9=2343, 99.99=2623] 
+2024-03-28 13:12:18:451 510 sec: 655761 operations; 1310.2 current ops/sec; est completion in 4 minutes [INSERT: Count=674, Max=74, Min=14, Avg=39.19, 90=51, 99=64, 99.9=71, 99.99=74] [SCAN: Count=12427, Max=2817, Min=19, Avg=800.45, 90=1689, 99=2121, 99.9=2289, 99.99=2541] 
+2024-03-28 13:12:28:451 520 sec: 668467 operations; 1270.6 current ops/sec; est completion in 4 minutes [INSERT: Count=647, Max=89, Min=13, Avg=39.82, 90=52, 99=64, 99.9=69, 99.99=89] [SCAN: Count=12062, Max=3099, Min=17, Avg=824.88, 90=1711, 99=2131, 99.9=2347, 99.99=2557] 
+2024-03-28 13:12:38:451 530 sec: 681321 operations; 1285.4 current ops/sec; est completion in 4 minutes [INSERT: Count=620, Max=89, Min=13, Avg=40.65, 90=54, 99=69, 99.9=85, 99.99=89] [SCAN: Count=12232, Max=2935, Min=19, Avg=813.41, 90=1713, 99=2127, 99.9=2363, 99.99=2617] 
+2024-03-28 13:12:48:451 540 sec: 694199 operations; 1287.8 current ops/sec; est completion in 3 minutes [INSERT: Count=622, Max=80, Min=12, Avg=40.58, 90=53, 99=69, 99.9=74, 99.99=80] [SCAN: Count=12256, Max=2689, Min=22, Avg=811.76, 90=1703, 99=2131, 99.9=2327, 99.99=2681] 
+2024-03-28 13:12:58:451 550 sec: 707149 operations; 1295 current ops/sec; est completion in 3 minutes [INSERT: Count=682, Max=91, Min=12, Avg=41.23, 90=55, 99=71, 99.9=77, 99.99=91] [SCAN: Count=12267, Max=3395, Min=23, Avg=810.76, 90=1707, 99=2125, 99.9=2433, 99.99=2905] 
+2024-03-28 13:13:08:451 560 sec: 720109 operations; 1296 current ops/sec; est completion in 3 minutes [INSERT: Count=630, Max=76, Min=14, Avg=39.26, 90=51, 99=65, 99.9=74, 99.99=76] [SCAN: Count=12331, Max=2969, Min=22, Avg=806.95, 90=1712, 99=2147, 99.9=2413, 99.99=2929] 
+2024-03-28 13:13:18:451 570 sec: 733062 operations; 1295.3 current ops/sec; est completion in 3 minutes [INSERT: Count=656, Max=85, Min=13, Avg=40, 90=54, 99=69, 99.9=81, 99.99=85] [SCAN: Count=12296, Max=2873, Min=19, Avg=808.98, 90=1716, 99=2127, 99.9=2313, 99.99=2513] 
+2024-03-28 13:13:28:451 580 sec: 745973 operations; 1291.1 current ops/sec; est completion in 3 minutes [INSERT: Count=689, Max=73, Min=13, Avg=40, 90=52, 99=63, 99.9=70, 99.99=73] [SCAN: Count=12223, Max=3101, Min=15, Avg=813.84, 90=1687, 99=2113, 99.9=2317, 99.99=2581] 
+2024-03-28 13:13:38:451 590 sec: 758828 operations; 1285.5 current ops/sec; est completion in 3 minutes [INSERT: Count=658, Max=87, Min=13, Avg=40.16, 90=51, 99=71, 99.9=77, 99.99=87] [SCAN: Count=12196, Max=2683, Min=21, Avg=815.59, 90=1703, 99=2125, 99.9=2345, 99.99=2487] 
+2024-03-28 13:13:48:451 600 sec: 771870 operations; 1304.2 current ops/sec; est completion in 2 minutes [INSERT: Count=625, Max=82, Min=14, Avg=38.68, 90=50, 99=64, 99.9=74, 99.99=82] [SCAN: Count=12417, Max=3195, Min=18, Avg=801.35, 90=1683, 99=2131, 99.9=2367, 99.99=2879] 
+2024-03-28 13:13:58:451 610 sec: 784810 operations; 1294 current ops/sec; est completion in 2 minutes [INSERT: Count=623, Max=74, Min=13, Avg=39.78, 90=53, 99=66, 99.9=71, 99.99=74] [SCAN: Count=12317, Max=2615, Min=18, Avg=807.8, 90=1698, 99=2121, 99.9=2367, 99.99=2575] 
+2024-03-28 13:14:08:451 620 sec: 797852 operations; 1304.2 current ops/sec; est completion in 2 minutes [INSERT: Count=668, Max=78, Min=13, Avg=39.54, 90=51, 99=64, 99.9=78, 99.99=78] [SCAN: Count=12374, Max=3693, Min=22, Avg=804, 90=1680, 99=2119, 99.9=2355, 99.99=2705] 
+2024-03-28 13:14:18:451 630 sec: 810706 operations; 1285.4 current ops/sec; est completion in 2 minutes [INSERT: Count=618, Max=81, Min=13, Avg=40.61, 90=53, 99=63, 99.9=76, 99.99=81] [SCAN: Count=12236, Max=2697, Min=23, Avg=813.11, 90=1692, 99=2117, 99.9=2359, 99.99=2641] 
+2024-03-28 13:14:28:451 640 sec: 823573 operations; 1286.7 current ops/sec; est completion in 2 minutes [INSERT: Count=658, Max=731, Min=13, Avg=40.47, 90=52, 99=67, 99.9=81, 99.99=731] [SCAN: Count=12211, Max=3043, Min=20, Avg=814.76, 90=1703, 99=2151, 99.9=2513, 99.99=2765] 
+2024-03-28 13:14:38:451 650 sec: 835446 operations; 1187.3 current ops/sec; est completion in 2 minutes [INSERT: Count=615, Max=93, Min=12, Avg=41.39, 90=56, 99=69, 99.9=73, 99.99=93] [SCAN: Count=11256, Max=7259, Min=16, Avg=883.93, 90=1878, 99=2463, 99.9=2777, 99.99=3253] 
+2024-03-28 13:14:48:451 660 sec: 848535 operations; 1308.9 current ops/sec; est completion in 1 minute [INSERT: Count=661, Max=83, Min=14, Avg=39, 90=49, 99=61, 99.9=68, 99.99=83] [SCAN: Count=12429, Max=2679, Min=17, Avg=800.51, 90=1687, 99=2135, 99.9=2363, 99.99=2443] 
+2024-03-28 13:14:58:451 670 sec: 861403 operations; 1286.8 current ops/sec; est completion in 1 minute [INSERT: Count=610, Max=74, Min=14, Avg=41.29, 90=53, 99=67, 99.9=71, 99.99=74] [SCAN: Count=12258, Max=2889, Min=16, Avg=811.68, 90=1714, 99=2145, 99.9=2377, 99.99=2799] 
+2024-03-28 13:15:08:451 680 sec: 874322 operations; 1291.9 current ops/sec; est completion in 1 minute [INSERT: Count=595, Max=74, Min=13, Avg=43.25, 90=58, 99=70, 99.9=73, 99.99=74] [SCAN: Count=12325, Max=2511, Min=18, Avg=807.19, 90=1697, 99=2127, 99.9=2333, 99.99=2507] 
+2024-03-28 13:15:18:451 690 sec: 887285 operations; 1296.3 current ops/sec; est completion in 1 minute [INSERT: Count=670, Max=83, Min=13, Avg=40.28, 90=53, 99=70, 99.9=82, 99.99=83] [SCAN: Count=12291, Max=2897, Min=23, Avg=809.25, 90=1708, 99=2117, 99.9=2391, 99.99=2749] 
+2024-03-28 13:15:28:451 700 sec: 900198 operations; 1291.3 current ops/sec; est completion in 1 minute [INSERT: Count=657, Max=94, Min=13, Avg=40.47, 90=53, 99=68, 99.9=79, 99.99=94] [SCAN: Count=12257, Max=2681, Min=20, Avg=811.65, 90=1710, 99=2151, 99.9=2353, 99.99=2585] 
+2024-03-28 13:15:38:451 710 sec: 913030 operations; 1283.2 current ops/sec; est completion in 1 minute [INSERT: Count=707, Max=72, Min=12, Avg=40.12, 90=54, 99=66, 99.9=71, 99.99=72] [SCAN: Count=12124, Max=12447, Min=21, Avg=820.32, 90=1707, 99=2149, 99.9=2373, 99.99=3201] 
+2024-03-28 13:15:48:451 720 sec: 926069 operations; 1303.9 current ops/sec; est completion in 58 seconds [INSERT: Count=655, Max=77, Min=13, Avg=40.58, 90=53, 99=69, 99.9=76, 99.99=77] [SCAN: Count=12384, Max=3085, Min=24, Avg=803.18, 90=1705, 99=2133, 99.9=2343, 99.99=2711] 
+2024-03-28 13:15:58:451 730 sec: 938826 operations; 1275.7 current ops/sec; est completion in 48 seconds [INSERT: Count=638, Max=86, Min=13, Avg=40.37, 90=52, 99=68, 99.9=75, 99.99=86] [SCAN: Count=12119, Max=2905, Min=18, Avg=820.92, 90=1713, 99=2129, 99.9=2335, 99.99=2593] 
+2024-03-28 13:16:08:451 740 sec: 951695 operations; 1286.9 current ops/sec; est completion in 38 seconds [INSERT: Count=647, Max=78, Min=13, Avg=39.87, 90=51, 99=68, 99.9=77, 99.99=78] [SCAN: Count=12222, Max=2815, Min=19, Avg=814.08, 90=1719, 99=2149, 99.9=2367, 99.99=2579] 
+2024-03-28 13:16:18:451 750 sec: 964610 operations; 1291.5 current ops/sec; est completion in 28 seconds [INSERT: Count=630, Max=92, Min=12, Avg=42.06, 90=57, 99=73, 99.9=78, 99.99=92] [SCAN: Count=12287, Max=2789, Min=15, Avg=809.66, 90=1710, 99=2137, 99.9=2381, 99.99=2687] 
+2024-03-28 13:16:28:451 760 sec: 977530 operations; 1292 current ops/sec; est completion in 18 seconds [INSERT: Count=663, Max=130, Min=14, Avg=41.05, 90=53, 99=68, 99.9=82, 99.99=130] [SCAN: Count=12255, Max=2767, Min=17, Avg=811.62, 90=1700, 99=2153, 99.9=2357, 99.99=2745] 
+2024-03-28 13:16:38:451 770 sec: 990379 operations; 1284.9 current ops/sec; est completion in 8 second [INSERT: Count=609, Max=83, Min=13, Avg=40.19, 90=53, 99=70, 99.9=80, 99.99=83] [SCAN: Count=12241, Max=3033, Min=21, Avg=812.93, 90=1701, 99=2137, 99.9=2335, 99.99=2915] 
+2024-03-28 13:16:48:451 780 sec: 1000000 operations; 962.1 current ops/sec; [INSERT: Count=486, Max=84, Min=13, Avg=40.01, 90=54, 99=67, 99.9=84, 99.99=84] [SCAN: Count=9134, Max=2489, Min=18, Avg=815.59, 90=1699, 99=2129, 99.9=2371, 99.99=2445] 
+2024-03-28 13:16:58:451 790 sec: 1000000 operations; 0 current ops/sec; [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [SCAN: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+2024-03-28 13:17:08:451 800 sec: 1000000 operations; 0 current ops/sec; [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [SCAN: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 
+Waiting for background work
+Finished waiting for background work
+rocksdb.block.cache.miss COUNT : 12077797
+rocksdb.block.cache.hit COUNT : 3453289
+rocksdb.block.cache.add COUNT : 11622902
+rocksdb.block.cache.add.failures COUNT : 0
+rocksdb.block.cache.index.miss COUNT : 0
+rocksdb.block.cache.index.hit COUNT : 0
+rocksdb.block.cache.index.add COUNT : 0
+rocksdb.block.cache.index.bytes.insert COUNT : 0
+rocksdb.block.cache.filter.miss COUNT : 0
+rocksdb.block.cache.filter.hit COUNT : 0
+rocksdb.block.cache.filter.add COUNT : 0
+rocksdb.block.cache.filter.bytes.insert COUNT : 0
+rocksdb.block.cache.data.miss COUNT : 12077797
+rocksdb.block.cache.data.hit COUNT : 3453289
+rocksdb.block.cache.data.add COUNT : 11622902
+rocksdb.block.cache.data.bytes.insert COUNT : 55722577152
+rocksdb.block.cache.bytes.read COUNT : 16546860544
+rocksdb.block.cache.bytes.write COUNT : 55722577152
+rocksdb.bloom.filter.useful COUNT : 0
+rocksdb.bloom.filter.full.positive COUNT : 0
+rocksdb.bloom.filter.full.true.positive COUNT : 0
+rocksdb.persistent.cache.hit COUNT : 0
+rocksdb.persistent.cache.miss COUNT : 0
+rocksdb.sim.block.cache.hit COUNT : 0
+rocksdb.sim.block.cache.miss COUNT : 0
+rocksdb.memtable.hit COUNT : 0
+rocksdb.memtable.miss COUNT : 0
+rocksdb.l0.hit COUNT : 0
+rocksdb.l1.hit COUNT : 0
+rocksdb.l2andup.hit COUNT : 0
+rocksdb.compaction.key.drop.new COUNT : 571
+rocksdb.compaction.key.drop.obsolete COUNT : 0
+rocksdb.compaction.key.drop.range_del COUNT : 0
+rocksdb.compaction.key.drop.user COUNT : 0
+rocksdb.compaction.range_del.drop.obsolete COUNT : 0
+rocksdb.compaction.optimized.del.drop.obsolete COUNT : 0
+rocksdb.compaction.cancelled COUNT : 0
+rocksdb.number.keys.written COUNT : 49999
+rocksdb.number.keys.read COUNT : 0
+rocksdb.number.keys.updated COUNT : 0
+rocksdb.bytes.written COUNT : 58992784
+rocksdb.bytes.read COUNT : 0
+rocksdb.number.db.seek COUNT : 950001
+rocksdb.number.db.next COUNT : 47994041
+rocksdb.number.db.prev COUNT : 0
+rocksdb.number.db.seek.found COUNT : 950001
+rocksdb.number.db.next.found COUNT : 47994040
+rocksdb.number.db.prev.found COUNT : 0
+rocksdb.db.iter.bytes.read COUNT : 56915997450
+rocksdb.no.file.opens COUNT : 1663
+rocksdb.no.file.errors COUNT : 0
+rocksdb.stall.micros COUNT : 0
+rocksdb.db.mutex.wait.micros COUNT : 2310154
+rocksdb.number.multiget.get COUNT : 0
+rocksdb.number.multiget.keys.read COUNT : 0
+rocksdb.number.multiget.bytes.read COUNT : 0
+rocksdb.number.merge.failures COUNT : 0
+rocksdb.bloom.filter.prefix.checked COUNT : 0
+rocksdb.bloom.filter.prefix.useful COUNT : 0
+rocksdb.bloom.filter.prefix.true.positive COUNT : 0
+rocksdb.number.reseeks.iteration COUNT : 0
+rocksdb.getupdatessince.calls COUNT : 0
+rocksdb.wal.synced COUNT : 0
+rocksdb.wal.bytes COUNT : 58992784
+rocksdb.write.self COUNT : 49999
+rocksdb.write.other COUNT : 0
+rocksdb.write.wal COUNT : 49999
+rocksdb.compact.read.bytes COUNT : 2139108773
+rocksdb.compact.write.bytes COUNT : 2202935315
+rocksdb.flush.write.bytes COUNT : 0
+rocksdb.compact.read.marked.bytes COUNT : 0
+rocksdb.compact.read.periodic.bytes COUNT : 0
+rocksdb.compact.read.ttl.bytes COUNT : 0
+rocksdb.compact.write.marked.bytes COUNT : 0
+rocksdb.compact.write.periodic.bytes COUNT : 0
+rocksdb.compact.write.ttl.bytes COUNT : 0
+rocksdb.number.direct.load.table.properties COUNT : 0
+rocksdb.number.superversion_acquires COUNT : 5
+rocksdb.number.superversion_releases COUNT : 0
+rocksdb.number.superversion_cleanups COUNT : 0
+rocksdb.number.block.compressed COUNT : 11
+rocksdb.number.block.decompressed COUNT : 1618
+rocksdb.number.block.not_compressed COUNT : 0
+rocksdb.merge.operation.time.nanos COUNT : 0
+rocksdb.filter.operation.time.nanos COUNT : 0
+rocksdb.compaction.total.time.cpu_micros COUNT : 11032772
+rocksdb.row.cache.hit COUNT : 0
+rocksdb.row.cache.miss COUNT : 0
+rocksdb.read.amp.estimate.useful.bytes COUNT : 0
+rocksdb.read.amp.total.read.bytes COUNT : 0
+rocksdb.number.rate_limiter.drains COUNT : 0
+rocksdb.number.iter.skip COUNT : 33681
+rocksdb.blobdb.num.put COUNT : 0
+rocksdb.blobdb.num.write COUNT : 0
+rocksdb.blobdb.num.get COUNT : 0
+rocksdb.blobdb.num.multiget COUNT : 0
+rocksdb.blobdb.num.seek COUNT : 0
+rocksdb.blobdb.num.next COUNT : 0
+rocksdb.blobdb.num.prev COUNT : 0
+rocksdb.blobdb.num.keys.written COUNT : 0
+rocksdb.blobdb.num.keys.read COUNT : 0
+rocksdb.blobdb.bytes.written COUNT : 0
+rocksdb.blobdb.bytes.read COUNT : 0
+rocksdb.blobdb.write.inlined COUNT : 0
+rocksdb.blobdb.write.inlined.ttl COUNT : 0
+rocksdb.blobdb.write.blob COUNT : 0
+rocksdb.blobdb.write.blob.ttl COUNT : 0
+rocksdb.blobdb.blob.file.bytes.written COUNT : 0
+rocksdb.blobdb.blob.file.bytes.read COUNT : 0
+rocksdb.blobdb.blob.file.synced COUNT : 0
+rocksdb.blobdb.blob.index.expired.count COUNT : 0
+rocksdb.blobdb.blob.index.expired.size COUNT : 0
+rocksdb.blobdb.blob.index.evicted.count COUNT : 0
+rocksdb.blobdb.blob.index.evicted.size COUNT : 0
+rocksdb.blobdb.gc.num.files COUNT : 0
+rocksdb.blobdb.gc.num.new.files COUNT : 0
+rocksdb.blobdb.gc.failures COUNT : 0
+rocksdb.blobdb.gc.num.keys.relocated COUNT : 0
+rocksdb.blobdb.gc.bytes.relocated COUNT : 0
+rocksdb.blobdb.fifo.num.files.evicted COUNT : 0
+rocksdb.blobdb.fifo.num.keys.evicted COUNT : 0
+rocksdb.blobdb.fifo.bytes.evicted COUNT : 0
+rocksdb.txn.overhead.mutex.prepare COUNT : 0
+rocksdb.txn.overhead.mutex.old.commit.map COUNT : 0
+rocksdb.txn.overhead.duplicate.key COUNT : 0
+rocksdb.txn.overhead.mutex.snapshot COUNT : 0
+rocksdb.txn.get.tryagain COUNT : 0
+rocksdb.number.multiget.keys.found COUNT : 0
+rocksdb.num.iterator.created COUNT : 950001
+rocksdb.num.iterator.deleted COUNT : 950001
+rocksdb.block.cache.compression.dict.miss COUNT : 0
+rocksdb.block.cache.compression.dict.hit COUNT : 0
+rocksdb.block.cache.compression.dict.add COUNT : 0
+rocksdb.block.cache.compression.dict.bytes.insert COUNT : 0
+rocksdb.block.cache.add.redundant COUNT : 0
+rocksdb.block.cache.index.add.redundant COUNT : 0
+rocksdb.block.cache.filter.add.redundant COUNT : 0
+rocksdb.block.cache.data.add.redundant COUNT : 0
+rocksdb.block.cache.compression.dict.add.redundant COUNT : 0
+rocksdb.files.marked.trash COUNT : 0
+rocksdb.files.marked.trash.deleted COUNT : 0
+rocksdb.files.deleted.immediately COUNT : 31
+rocksdb.error.handler.bg.error.count COUNT : 0
+rocksdb.error.handler.bg.errro.count COUNT : 0
+rocksdb.error.handler.bg.io.error.count COUNT : 0
+rocksdb.error.handler.bg.io.errro.count COUNT : 0
+rocksdb.error.handler.bg.retryable.io.error.count COUNT : 0
+rocksdb.error.handler.bg.retryable.io.errro.count COUNT : 0
+rocksdb.error.handler.autoresume.count COUNT : 0
+rocksdb.error.handler.autoresume.retry.total.count COUNT : 0
+rocksdb.error.handler.autoresume.success.count COUNT : 0
+rocksdb.memtable.payload.bytes.at.flush COUNT : 0
+rocksdb.memtable.garbage.bytes.at.flush COUNT : 0
+rocksdb.secondary.cache.hits COUNT : 0
+rocksdb.verify_checksum.read.bytes COUNT : 0
+rocksdb.backup.read.bytes COUNT : 0
+rocksdb.backup.write.bytes COUNT : 0
+rocksdb.remote.compact.read.bytes COUNT : 0
+rocksdb.remote.compact.write.bytes COUNT : 0
+rocksdb.hot.file.read.bytes COUNT : 0
+rocksdb.warm.file.read.bytes COUNT : 0
+rocksdb.cold.file.read.bytes COUNT : 0
+rocksdb.hot.file.read.count COUNT : 0
+rocksdb.warm.file.read.count COUNT : 0
+rocksdb.cold.file.read.count COUNT : 0
+rocksdb.last.level.read.bytes COUNT : 40322148900
+rocksdb.last.level.read.count COUNT : 8574188
+rocksdb.non.last.level.read.bytes COUNT : 16490328031
+rocksdb.non.last.level.read.count COUNT : 3510261
+rocksdb.last.level.seek.filtered COUNT : 0
+rocksdb.last.level.seek.filter.match COUNT : 0
+rocksdb.last.level.seek.data COUNT : 950666
+rocksdb.last.level.seek.data.useful.no.filter COUNT : 950130
+rocksdb.last.level.seek.data.useful.filter.match COUNT : 0
+rocksdb.non.last.level.seek.filtered COUNT : 0
+rocksdb.non.last.level.seek.filter.match COUNT : 0
+rocksdb.non.last.level.seek.data COUNT : 1921367
+rocksdb.non.last.level.seek.data.useful.no.filter COUNT : 1086403
+rocksdb.non.last.level.seek.data.useful.filter.match COUNT : 0
+rocksdb.block.checksum.compute.count COUNT : 12081123
+rocksdb.block.checksum.mismatch.count COUNT : 0
+rocksdb.multiget.coroutine.count COUNT : 0
+rocksdb.blobdb.cache.miss COUNT : 0
+rocksdb.blobdb.cache.hit COUNT : 0
+rocksdb.blobdb.cache.add COUNT : 0
+rocksdb.blobdb.cache.add.failures COUNT : 0
+rocksdb.blobdb.cache.bytes.read COUNT : 0
+rocksdb.blobdb.cache.bytes.write COUNT : 0
+rocksdb.read.async.micros COUNT : 0
+rocksdb.async.read.error.count COUNT : 0
+rocksdb.secondary.cache.filter.hits COUNT : 0
+rocksdb.secondary.cache.index.hits COUNT : 0
+rocksdb.secondary.cache.data.hits COUNT : 0
+rocksdb.table.open.prefetch.tail.miss COUNT : 0
+rocksdb.table.open.prefetch.tail.hit COUNT : 0
+rocksdb.timestamp.filter.table.checked COUNT : 0
+rocksdb.timestamp.filter.table.filtered COUNT : 0
+rocksdb.bytes.compressed.from COUNT : 3596962
+rocksdb.bytes.compressed.to COUNT : 2089439
+rocksdb.bytes.compression_bypassed COUNT : 1494328781
+rocksdb.bytes.compression.rejected COUNT : 704141200
+rocksdb.number.block_compression_bypassed COUNT : 317891
+rocksdb.number.block_compression_rejected COUNT : 150629
+rocksdb.bytes.decompressed.from COUNT : 275620592
+rocksdb.bytes.decompressed.to COUNT : 477428272
+rocksdb.readahead.trimmed COUNT : 0
+rocksdb.db.get.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.db.write.micros P50 : 29.118976 P95 : 48.693024 P99 : 61.176193 P100 : 4354.000000 COUNT : 49999 SUM : 1509708
+rocksdb.compaction.times.micros P50 : 4300000.000000 P95 : 14313858.000000 P99 : 14313858.000000 P100 : 14313858.000000 COUNT : 4 SUM : 30114679
+rocksdb.compaction.times.cpu_micros P50 : 1900000.000000 P95 : 5985398.000000 P99 : 5985398.000000 P100 : 5985398.000000 COUNT : 4 SUM : 11032772
+rocksdb.subcompaction.setup.times.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.table.sync.micros P50 : 50562.000000 P95 : 50562.000000 P99 : 50562.000000 P100 : 50562.000000 COUNT : 1 SUM : 50562
+rocksdb.compaction.outfile.sync.micros P50 : 62500.000000 P95 : 87278.000000 P99 : 87278.000000 P100 : 87278.000000 COUNT : 32 SUM : 1892756
+rocksdb.wal.file.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.manifest.file.sync.micros P50 : 236.666667 P95 : 355.000000 P99 : 355.000000 P100 : 355.000000 COUNT : 5 SUM : 1298
+rocksdb.table.open.io.micros P50 : 748.542435 P95 : 20010.958904 P99 : 36910.000000 P100 : 59836.000000 COUNT : 1663 SUM : 5844567
+rocksdb.db.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.read.block.compaction.micros P50 : 3.171463 P95 : 161.896700 P99 : 169.944734 P100 : 9866.000000 COUNT : 454895 SUM : 20438121
+rocksdb.read.block.get.micros P50 : 4.370871 P95 : 191.730918 P99 : 239.990345 P100 : 59777.000000 COUNT : 11624565 SUM : 628922217
+rocksdb.write.raw.block.micros P50 : 0.727475 P95 : 1.929406 P99 : 4.454253 P100 : 9800.000000 COUNT : 468597 SUM : 2395196
+rocksdb.numfiles.in.singlecompaction P50 : 3.500000 P95 : 20.000000 P99 : 20.000000 P100 : 20.000000 COUNT : 4 SUM : 31
+rocksdb.db.seek.micros P50 : 231.835307 P95 : 553.696502 P99 : 746.882477 P100 : 17437.000000 COUNT : 950001 SUM : 217972837
+rocksdb.db.write.stall P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.sst.read.micros P50 : 1.752735 P95 : 178.291627 P99 : 237.018857 P100 : 56846.000000 COUNT : 12084449 SUM : 609514420
+rocksdb.file.read.flush.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.compaction.micros P50 : 1.850933 P95 : 161.609015 P99 : 169.616694 P100 : 9858.000000 COUNT : 455023 SUM : 19724364
+rocksdb.file.read.db.open.micros P50 : 1.728298 P95 : 60.203822 P99 : 3564.615385 P100 : 56846.000000 COUNT : 6524 SUM : 1176594
+rocksdb.file.read.get.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.db.iterator.micros P50 : 1.747527 P95 : 180.679122 P99 : 237.429927 P100 : 12052.000000 COUNT : 11622902 SUM : 588613462
+rocksdb.file.read.verify.db.checksum.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.verify.file.checksums.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.subcompactions.scheduled P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.bytes.per.read P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.bytes.per.write P50 : 1176.000000 P95 : 1180.000000 P99 : 1180.000000 P100 : 1180.000000 COUNT : 49999 SUM : 58992784
+rocksdb.bytes.per.multiget P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.bytes.compressed P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.bytes.decompressed P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.compression.times.nanos P50 : 103.839381 P95 : 10282.610354 P99 : 13417.364107 P100 : 930774.000000 COUNT : 468531 SUM : 1186193700
+rocksdb.decompression.times.nanos P50 : 694042.303173 P95 : 14643137.254902 P99 : 29539230.769231 P100 : 48028082.000000 COUNT : 1618 SUM : 3953987403
+rocksdb.read.num.merge_operands P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.key.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.value.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.write.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.get.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.seek.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.next.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.prev.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.blob.file.write.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.blob.file.read.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.blob.file.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.compression.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.decompression.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.db.flush.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.sst.batch.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.index.and.filter.blocks.read.per.level P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.sst.read.per.level P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.error.handler.autoresume.retry.count P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.async.read.bytes P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.poll.wait.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.prefetched.bytes.discarded P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.multiget.io.batch.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.level.read.per.multiget P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.async.prefetch.abort.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.table.open.prefetch.tail.read.bytes P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+
+2024-03-28 13:17:15:984 807 sec: 1000000 operations; 0 current ops/sec; [CLEANUP: Count=1, Max=30048255, Min=30031872, Avg=30040064, 90=30048255, 99=30048255, 99.9=30048255, 99.99=30048255] [INSERT: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] [SCAN: Count=0, Max=0, Min=9223372036854775807, Avg=NaN, 90=0, 99=0, 99.9=0, 99.99=0] 

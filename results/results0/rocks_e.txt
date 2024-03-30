@@ -1,0 +1,33 @@
+Setting max_bytes_for_level_multiplier = 5.0
+[OVERALL], Compaction time(ms): 30000
+[OVERALL], RunTime(ms), 858241
+[OVERALL], Throughput(ops/sec), 1165.1738847246868
+[TOTAL_GCS_G1_Young_Generation], Count, 770
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 510
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.05942386812095903
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 770
+[TOTAL_GC_TIME], Time(ms), 510
+[TOTAL_GC_TIME_%], Time(%), 0.05942386812095903
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 3.0040064E7
+[CLEANUP], MinLatency(us), 30031872
+[CLEANUP], MaxLatency(us), 30048255
+[CLEANUP], 95thPercentileLatency(us), 30048255
+[CLEANUP], 99thPercentileLatency(us), 30048255
+[INSERT], Operations, 50200
+[INSERT], AverageLatency(us), 39.2043625498008
+[INSERT], MinLatency(us), 11
+[INSERT], MaxLatency(us), 1745
+[INSERT], 95thPercentileLatency(us), 58
+[INSERT], 99thPercentileLatency(us), 69
+[INSERT], Return=OK, 50200
+[SCAN], Operations, 949800
+[SCAN], AverageLatency(us), 864.2053432301537
+[SCAN], MinLatency(us), 19
+[SCAN], MaxLatency(us), 31695
+[SCAN], 95thPercentileLatency(us), 2027
+[SCAN], 99thPercentileLatency(us), 2365
+[SCAN], Return=OK, 949800
